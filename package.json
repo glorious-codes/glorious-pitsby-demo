@@ -1,0 +1,49 @@
+{
+  "name": "glorious-pitsby-examples",
+  "version": "0.1.0",
+  "description": "Pitsby documentation in action",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "format": "eslint ./src/**/*.js",
+    "test": "jest",
+    "deploy": "firebase deploy --non-interactive"
+  },
+  "keywords": [
+    "pitsby",
+    "documentation",
+    "example"
+  ],
+  "author": "Rafael Camargo <hello@rafaelcamargo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "codecov": "^3.6.1",
+    "css-loader": "^3.4.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0",
+    "firebase-tools": "^7.11.0",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "terser-webpack-plugin": "^2.3.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.13.0"
+  }
+}

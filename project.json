@@ -1,0 +1,38 @@
+{
+  "scripts": {
+    "source": {
+      "root": {
+        "react": "src/scripts/react/"
+      },
+      "libs": [
+        { "name": "reactComponents", "entry": "src/scripts/react/index.js" }
+      ]
+    },
+    "dist": {
+      "root": "dist/",
+      "filename": {
+        "prod": "[name].min.js",
+        "dev": "[name].js"
+      }
+    }
+  },
+  "styles": {
+    "source": {
+      "root": "src/styles/"
+    },
+    "dist": {
+      "filename": {
+        "prod": "[name].min.css",
+        "dev": "[name].css"
+      }
+    }
+  },
+  "tests": {
+    "source": {
+      "files": [
+        "src/scripts/**/*.js",
+        "!src/scripts/**/mocks/**/*.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+  },
+  "rules": {
+    "complexity": ["error", { "max": 3 }],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "max-lines": ["error", { "max": 100 }],
+    "max-statements": ["error", { "max": 5 },
+    { "ignoreTopLevelFunctions": true }
+    ],
+    "no-console": 0,
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "react/prop-types": 0
+  },
+  "overrides": [
+    {
+      "files": [ "src/**/*.test.js" ],
+      "rules": {
+        "max-lines": ["error", { "max": 250 }],
+        "max-statements": ["error", { "max": 15 },
+          { "ignoreTopLevelFunctions": true }
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
