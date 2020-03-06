@@ -1,2 +1,27 @@
-.pe-tag
+@require '_variables';
+@require '_mixins';
+
+.tag
   display inline-block
+  padding 6px 12px
+  background-color $color-blue-lighter
+  color $color-blue-dark
+  font-size $font-size-xxxs
+  font-weight bold
+  text-transform uppercase
+  border-width 1px
+  border-style solid
+  border-color $color-blue-light
+  border-radius(4px)
+  &.tag-danger
+    background-color $color-red-lighter
+    color $color-red-dark
+    border-color $color-red-light
+  &.tag-success
+    background-color $color-green-lighter
+    color $color-green-dark
+    border-color $color-green-light
+  &.tag-warning
+    background-color $color-yellow-lighter
+    color $color-yellow-darker
+    border-color $color-yellow-dark
