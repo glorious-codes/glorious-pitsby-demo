@@ -1,18 +1,19 @@
 {
-  "name": "glorious-pitsby-examples",
+  "name": "glorious-pitsby-demo",
   "version": "0.1.0",
   "description": "Pitsby documentation in action",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack",
     "format": "eslint ./src/**/*.js",
+    "start": "pitsby build --watch",
     "test": "jest",
     "deploy": "firebase deploy --non-interactive"
   },
   "keywords": [
     "pitsby",
     "documentation",
-    "example"
+    "demo"
   ],
   "author": "Rafael Camargo <hello@rafaelcamargo.com>",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@glorious/pitsby": "file:../glorious-pitsby",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
