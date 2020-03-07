@@ -4,3 +4,26 @@ border-radius($radius)
   -webkit-border-radius $radius
   -moz-border-radius    $radius
   border-radius         $radius
+
+highlight()
+  &:hover,
+  &:focus,
+  &:active
+    {block}
+
+transition(property, time)
+  -webkit-transition property time $animation-curve-default
+  -moz-transition property time $animation-curve-default
+  -o-transition property time $animation-curve-default
+  transition property time $animation-curve-default
+
+unselectable()
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-user-select:     -moz-none;
+  -khtml-user-select:   none;
+  -webkit-user-select:  none;
+  -o-user-select:       none;
+  user-select:          none;
+
+webkit-appearance($property)
+  -webkit-appearance $property
