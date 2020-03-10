@@ -3,14 +3,19 @@ module.exports = {
   description: 'Abstraction of a native button.',
   properties: [
     {
+      name: 'type',
+      type: 'String',
+      values: 'submit, reset'
+    },
+    {
       name: 'theme',
       type: 'String',
       values: 'primary'
     },
     {
-      name: 'type',
-      type: 'String',
-      values: 'submit, reset'
+      name: 'disabled',
+      type: 'Boolean',
+      values: 'true/false'
     },
     {
       name: 'onClick',
@@ -41,6 +46,20 @@ module.exports = {
         return function(){
           return (
             <Button theme="primary">
+              Pimary Button
+            </Button>
+          );
+        }
+      }
+    },
+    {
+      title: 'Disabled Button',
+      controller: function(){
+        const { Button } = reactComponents;
+
+        return function(){
+          return (
+            <Button theme="primary" disabled={ true }>
               Pimary Button
             </Button>
           );

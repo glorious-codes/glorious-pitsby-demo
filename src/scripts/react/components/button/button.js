@@ -1,12 +1,13 @@
 import '@styles/button.styl';
 import React from 'react';
 
-export const Button = ({ type = 'button', theme, onClick, children }) => {
+export const Button = ({ type = 'button', theme, disabled, onClick, children }) => {
   return (
     <button
       className={ buildCssClasses(theme) }
       onClick={ onClick }
-      type={ type }>
+      type={ type }
+      disabled={ disabled }>
       { children }
     </button>
   );

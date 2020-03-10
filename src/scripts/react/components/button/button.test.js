@@ -8,6 +8,7 @@ describe('Button', () => {
       <Button
         type={ props.type }
         theme={ props.theme }
+        disabled={ props.disabled }
         onClick={ props.onClick }>
         { props.content }
       </Button>
@@ -33,6 +34,16 @@ describe('Button', () => {
   it('should optionally set a primary theme', () => {
     const wrapper = mount({ theme: 'primary' });
     expect(wrapper.prop('className').includes('button-primary')).toEqual(true);
+  });
+
+  it('should be enabled by default', () => {
+    const wrapper = mount();
+    expect(wrapper.prop('disabled')).toBeFalsy();
+  });
+
+  it('should optionally be disabled', () => {
+    const wrapper = mount({ disabled: true });
+    expect(wrapper.prop('disabled')).toBeTruthy();
   });
 
   it('should execute click callback on click', () => {

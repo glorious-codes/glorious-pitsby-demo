@@ -4,6 +4,10 @@
 themed-button($text-color, $bg-color)
   background-color $bg-color
   color $text-color
+  &:disabled
+    color alpha($text-color, .8)
+    background-color alpha($bg-color, .9)
+    cursor not-allowed
   +highlight()
     background-color alpha($bg-color, .9)
 
