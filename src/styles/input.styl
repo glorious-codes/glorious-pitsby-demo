@@ -1,0 +1,21 @@
+@require '_variables'
+@require '_mixins'
+
+.input
+  padding 10px
+  width 100%
+  font-size $font-size-sm
+  border-width 1px
+  border-style solid
+  border-color $color-grey
+  border-radius(4px)
+  box-sizing(border-box)
+  webkit-appearance(none)
+  &:disabled
+    background-color $color-grey-lighter
+    border-color $color-grey-light
+    +highlight()
+      border-color $color-grey-light
+  +highlight()
+    border-color $color-blue
+    outline 0
