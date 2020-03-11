@@ -1,6 +1,8 @@
 # Glorious Pitsby Demo
 > Demo documentation generated with https://pitsby.com
 
+[![CircleCI](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master.svg?style=svg)](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master) [![codecov](https://codecov.io/gh/glorious-codes/glorious-pitsby-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/glorious-codes/glorious-pitsby-demo)
+
 ## Contributing
 
 1. Install [Node](https://nodejs.org/en/). Download the "Recommend for Most Users" version.
