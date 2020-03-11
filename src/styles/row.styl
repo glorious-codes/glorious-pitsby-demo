@@ -1,0 +1,14 @@
+@require '_mixins'
+
+.row
+  margin 0 10px * -1
+  clearfix()
+  &.row-center
+    text-align center
+  &.row-right
+    text-align right
+  & + .row
+    margin-top 20px
+  for $size in (1..10)
+    &.row-offset-{$size}
+      margin-top $size * 10px
