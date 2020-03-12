@@ -46,7 +46,7 @@ module.exports = {
         return function(){
           return (
             <Button theme="primary">
-              Pimary Button
+              Primary Button
             </Button>
           );
         }
@@ -60,7 +60,7 @@ module.exports = {
         return function(){
           return (
             <Button theme="primary" disabled={ true }>
-              Pimary Button
+              Primary Button
             </Button>
           );
         }
@@ -92,7 +92,7 @@ module.exports = {
           return (
             <>
               <Button theme="primary" onClick={ () => setCounter(counter + 1) }>
-                Pimary Button
+                Primary Button
               </Button>
               { handleCounter(counter) }
             </>
