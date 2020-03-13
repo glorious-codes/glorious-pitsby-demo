@@ -1,0 +1,37 @@
+@require '_variables'
+@require '_mixins'
+
+theme($background-color, $color)
+  background-color $background-color
+  color $color
+  border-color alpha($color, .5)
+
+.alert
+  position relative
+  padding 12px
+  font-size $font-size-xs
+  border-width 1px
+  border-style solid
+  theme($color-yellow-lighter, $color-yellow-darker)
+  border-radius(4px)
+  box-sizing(border-box)
+  &.alert-danger
+    theme($color-red-lighter, $color-red-dark)
+    .alert-trigger
+      color $color-red-dark
+  &.alert-success
+    theme($color-green-lighter, $color-green-dark)
+  &.alert-has-trigger
+    padding-right 100px
+
+.alert-trigger
+  position absolute
+  top 15px
+  right 15px
+  padding 0
+  background-color transparent
+  text-transform uppercase
+  font-weight 600
+  cursor pointer
+  border 0
+  webkit-appearance(none)

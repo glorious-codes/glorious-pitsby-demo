@@ -1,4 +1,5 @@
 import '@styles/native.styl';
+import { Alert } from '@react/components/alert/alert';
 import { Button } from '@react/components/button/button';
 import { Col } from '@react/components/col/col';
 import { Field } from '@react/components/field/field';
@@ -8,6 +9,7 @@ import { Row } from '@react/components/row/row';
 import { Tag } from '@react/components/tag/tag';
 
 export default {
+  Alert,
   Button,
   Col,
   Field,
