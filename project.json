@@ -27,6 +27,15 @@
       }
     }
   },
+  "images": {
+    "source": {
+      "root": "src/images/",
+      "files": "src/images/**/*.*"
+    },
+    "dist": {
+      "root": "images/[name].[ext]"
+    }
+  },
   "tests": {
     "source": {
       "files": [

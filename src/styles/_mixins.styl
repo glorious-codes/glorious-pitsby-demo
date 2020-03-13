@@ -1,5 +1,11 @@
 @require '_variables'
 
+background-image($filename, $path = $path-images)
+  if($filename == 'none')
+    background-image none
+  else
+    background-image url($path + $filename)
+
 border-radius($radius)
   -webkit-border-radius $radius
   -moz-border-radius    $radius
