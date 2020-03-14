@@ -14,7 +14,7 @@ export const Button = ({ type = 'button', theme, disabled, onClick, children }) 
 };
 
 function buildCssClasses(theme){
-  const baseCssClass = 'button';
+  const baseCssClass = 'pd-button';
   const cssClasses = [baseCssClass];
   if(isThemeValid(theme))
     cssClasses.push(`${baseCssClass}-${theme}`);

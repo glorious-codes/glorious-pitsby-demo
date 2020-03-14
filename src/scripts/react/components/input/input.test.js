@@ -16,7 +16,7 @@ describe('Input', () => {
 
   it('should have appropriate css class', () => {
     const wrapper = mount();
-    expect(wrapper.prop('className')).toEqual('input');
+    expect(wrapper.prop('className')).toEqual('pd-input');
   });
 
   it('should set type as text by default', () => {

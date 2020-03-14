@@ -11,6 +11,6 @@ describe('Loader', () => {
 
   it('should have appropriate css class', () => {
     const wrapper = mount();
-    expect(wrapper.prop('className')).toEqual('loader');
+    expect(wrapper.prop('className')).toEqual('pd-loader');
   });
 });

@@ -1,14 +1,14 @@
 @require '_mixins'
 
-.row
+.pd-row
   margin 0 10px * -1
   clearfix()
-  &.row-center
+  &.pd-row-center
     text-align center
-  &.row-right
+  &.pd-row-right
     text-align right
-  & + .row
+  & + .pd-row
     margin-top 20px
   for $size in (1..10)
-    &.row-offset-{$size}
+    &.pd-row-offset-{$size}
       margin-top $size * 10px

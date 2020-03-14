@@ -16,7 +16,7 @@ describe('Alert', () => {
 
   it('should have appropriate css class', () => {
     const wrapper = mount();
-    expect(wrapper.prop('className')).toEqual('alert');
+    expect(wrapper.prop('className')).toEqual('pd-alert');
   });
 
   it('should optionally set a danger theme', () => {

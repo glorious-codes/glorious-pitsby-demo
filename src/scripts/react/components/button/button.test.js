@@ -17,7 +17,7 @@ describe('Button', () => {
 
   it('should have appropriate css class', () => {
     const wrapper = mount();
-    expect(wrapper.prop('className')).toEqual('button');
+    expect(wrapper.prop('className')).toEqual('pd-button');
   });
 
   it('should set type as button by default', () => {

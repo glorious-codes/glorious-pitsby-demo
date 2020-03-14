@@ -4,7 +4,7 @@ import React from 'react';
 export const Input = ({ type = 'text', value, disabled, required, onChange }) => {
   return (
     <input
-      className="input"
+      className="pd-input"
       type={ type }
       value={ value }
       disabled={ disabled }

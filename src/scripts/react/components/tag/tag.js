@@ -10,7 +10,7 @@ export const Tag = ({ children, theme }) => {
 };
 
 function buildCssClasses(theme){
-  const baseCssClass = 'tag';
+  const baseCssClass = 'pd-tag';
   const cssClasses = [baseCssClass];
   if(isThemeValid(theme))
     cssClasses.push(`${baseCssClass}-${theme}`);

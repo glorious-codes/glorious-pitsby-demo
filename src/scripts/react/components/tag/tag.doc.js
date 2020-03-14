@@ -44,7 +44,7 @@ module.exports = {
           );
         }
       },
-      styles: '.tag + .tag { margin-left: 20px; }'
+      styles: '.pd-tag + .pd-tag { margin-left: 20px; }'
     }
   ]
 };

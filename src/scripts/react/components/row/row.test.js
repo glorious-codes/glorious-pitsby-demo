@@ -13,22 +13,22 @@ describe('Row', () => {
 
   it('should have appropriate css class', () => {
     const wrapper = mount();
-    expect(wrapper.prop('className')).toEqual('row');
+    expect(wrapper.prop('className')).toEqual('pd-row');
   });
 
   it('should optionally offset row', () => {
     const wrapper = mount({ offset: 4 });
-    expect(wrapper.prop('className').includes('row-offset-4')).toEqual(true);
+    expect(wrapper.prop('className').includes('pd-row-offset-4')).toEqual(true);
   });
 
   it('should ignore offsets greater than 10', () => {
     const wrapper = mount({ offset: 11 });
-    expect(wrapper.prop('className').includes('row-offset-11')).toEqual(false);
+    expect(wrapper.prop('className').includes('pd-row-offset-11')).toEqual(false);
   });
 
   it('should ignore offsets lower than 1', () => {
     const wrapper = mount({ offset: 0 });
-    expect(wrapper.prop('className').includes('row-offset-0')).toEqual(false);
+    expect(wrapper.prop('className').includes('pd-row-offset-0')).toEqual(false);
   });
 
   it('should render some content', () => {

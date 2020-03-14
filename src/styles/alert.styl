@@ -6,7 +6,7 @@ theme($background-color, $color)
   color $color
   border-color alpha($color, .5)
 
-.alert
+.pd-alert
   position relative
   padding 12px
   font-size $font-size-xs
@@ -15,16 +15,16 @@ theme($background-color, $color)
   theme($color-yellow-lighter, $color-yellow-darker)
   border-radius(4px)
   box-sizing(border-box)
-  &.alert-danger
+  &.pd-alert-danger
     theme($color-red-lighter, $color-red-dark)
-    .alert-trigger
+    .pd-alert-trigger
       color $color-red-dark
-  &.alert-success
+  &.pd-alert-success
     theme($color-green-lighter, $color-green-dark)
-  &.alert-has-trigger
+  &.pd-alert-has-trigger
     padding-right 100px
 
-.alert-trigger
+.pd-alert-trigger
   position absolute
   top 15px
   right 15px

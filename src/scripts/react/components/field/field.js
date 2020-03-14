@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Field = ({ label, children }) => {
   return (
-    <div className="field">
+    <div className="pd-field">
       <label>
         { label }
         { handleAsterisk(children) }
@@ -15,5 +15,5 @@ export const Field = ({ label, children }) => {
 
 function handleAsterisk(children){
   if(children && children.props.required)
-    return <span className="field-asterisk" data-field-asterisk>*</span>;
+    return <span className="pd-field-asterisk" data-field-asterisk>*</span>;
 }

@@ -19,5 +19,5 @@ function buildOffsetClassName(offset){
 }
 
 function getBaseCssClass(){
-  return 'row';
+  return 'pd-row';
 }

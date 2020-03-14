@@ -24,5 +24,5 @@ function buildOffsetCssClass(offset){
 }
 
 function getBaseCssClass(){
-  return 'col';
+  return 'pd-col';
 }

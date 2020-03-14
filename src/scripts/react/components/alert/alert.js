@@ -18,7 +18,7 @@ function buildClassName({ theme, onTriggerClick }){
 }
 
 function getBaseCssClass(){
-  return 'alert';
+  return 'pd-alert';
 }
 
 function prependBaseCssClass(cssClass){
@@ -39,7 +39,7 @@ function buildTriggerCssClass(onTriggerClick){
 
 function buildTrigger(triggerText = 'Retry', onTriggerClick){
   return onTriggerClick ?
-    <button type="button" className="alert-trigger" onClick={ onTriggerClick }>
+    <button type="button" className="pd-alert-trigger" onClick={ onTriggerClick }>
       { triggerText }
     </button> :
     null;

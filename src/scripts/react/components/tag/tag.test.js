@@ -13,17 +13,17 @@ describe('Tag', () => {
 
   it('should contain appropriate css class', () => {
     const wrapper = mount();
-    expect(wrapper.prop('className')).toEqual('tag');
+    expect(wrapper.prop('className')).toEqual('pd-tag');
   });
 
   it('should contain theme css class if a valid theme is passed', () => {
     const wrapper = mount({ theme: 'danger' });
-    expect(wrapper.prop('className').includes('tag-danger')).toEqual(true);
+    expect(wrapper.prop('className').includes('pd-tag-danger')).toEqual(true);
   });
 
   it('should not contain theme css class if an invalid theme is passed', () => {
     const wrapper = mount({ theme: 'dark' });
-    expect(wrapper.prop('className')).toEqual('tag');
+    expect(wrapper.prop('className')).toEqual('pd-tag');
   });
 
   it('should render some content', () => {
