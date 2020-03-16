@@ -1,0 +1,47 @@
+@require '_variables'
+@require '_mixins'
+
+theme($background-color, $color)
+  background-color $background-color
+  color $color
+  border-color alpha($color, .1)
+  .pd-toast-button-icon
+    color alpha($color, .5)
+    +highlight()
+      color alpha($color, .75)
+
+.pd-toast
+  position relative
+  padding 20px
+  font-size $font-size-xs
+  border-width 1px
+  border-style solid
+  border-radius(4px)
+  theme($color-grey-lighter, $color-grey-dark)
+  &.pd-toast-danger
+    theme($color-red-lighter, $color-red-dark)
+  &.pd-toast-success
+    theme($color-green-lighter, $color-green-dark)
+  &.pd-toast-warning
+    theme($color-yellow-lighter, $color-yellow-darker)
+  & + .pd-toast
+    margin-top 20px
+
+.pd-toast-button
+  position absolute
+  top 5px
+  right 5px
+  padding 0
+  width 26px
+  height 26px
+  background-color transparent
+  border 0
+  cursor pointer
+  webkit-appearance(none)
+  +highlight()
+    outline 0
+
+.pd-toast-button-icon
+  position relative
+  top -3px
+  font-size $font-size-lg
