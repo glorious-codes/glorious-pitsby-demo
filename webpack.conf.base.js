@@ -30,6 +30,11 @@ module.exports = {
         use: [ MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader' ]
       },
       {
+        test: /\.html$/,
+        include: [path.resolve(__dirname, project.scripts.source.root.vanilla)],
+        use: 'html-loader'
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader'
@@ -39,6 +44,7 @@ module.exports = {
   resolve: {
     alias: {
       '@react': `${__dirname}/${project.scripts.source.root.react}`,
+      '@vanilla': `${__dirname}/${project.scripts.source.root.vanilla}`,
       '@styles': `${__dirname}/${project.styles.source.root}`
     }
   },

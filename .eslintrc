@@ -6,6 +6,9 @@
     "jest": true,
     "node": true
   },
+  "globals": {
+    "vanillaComponents": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"

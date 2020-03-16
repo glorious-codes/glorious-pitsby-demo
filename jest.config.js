@@ -13,13 +13,15 @@ module.exports = {
   },
   moduleNameMapper: {
     '@react\/(.*)$': `<rootDir>/${project.scripts.source.root.react}$1`,
+    '@vanilla\/(.*)$': `<rootDir>/${project.scripts.source.root.vanilla}$1`,
     '@styles\/(.*)$': `<rootDir>/${project.styles.source.root}$1`
   },
   setupFilesAfterEnv: [
-    '<rootDir>/src/scripts/react/mocks/global.js'
+    '<rootDir>/jest.setup.js'
   ],
   transform: {
-    '^.+\\.styl$': '<rootDir>/src/scripts/base/mocks/raw-files.js',
+    '^.+\\.styl$': '<rootDir>/src/scripts/vanilla/mocks/raw-files.js',
+    '^.+\\.html$': 'html-loader-jest',
     '^.+\\.js$': 'babel-jest'
   }
 };

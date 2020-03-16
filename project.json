@@ -2,10 +2,12 @@
   "scripts": {
     "source": {
       "root": {
-        "react": "src/scripts/react/"
+        "react": "src/scripts/react/",
+        "vanilla": "src/scripts/vanilla/"
       },
       "libs": [
-        { "name": "reactComponents", "entry": "src/scripts/react/index.js" }
+        { "name": "reactComponents", "entry": "src/scripts/react/index.js" },
+        { "name": "vanillaComponents", "entry": "src/scripts/vanilla/index.js" }
       ]
     },
     "dist": {
