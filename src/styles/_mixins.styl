@@ -29,11 +29,18 @@ highlight()
   &:active
     {block}
 
-transition(property, time)
-  -webkit-transition property time $animation-curve-default
-  -moz-transition property time $animation-curve-default
-  -o-transition property time $animation-curve-default
-  transition property time $animation-curve-default
+transform($property)
+  -webkit-transform unquote($property)
+  -moz-transform unquote($property)
+  -ms-transform unquote($property)
+  -o-transform unquote($property)
+  transform unquote($property)
+
+transition($property, $time)
+  -webkit-transition $property $time $animation-curve-default
+  -moz-transition $property $time $animation-curve-default
+  -o-transition $property $time $animation-curve-default
+  transition $property $time $animation-curve-default
 
 unselectable()
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

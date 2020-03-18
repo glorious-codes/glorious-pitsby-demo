@@ -1,0 +1,16 @@
+@require '_variables'
+@require '_mixins'
+
+.pd-form
+  position relative
+  .pd-alert
+    margin-bottom 40px
+  .pd-loader
+    position absolute
+    top 50%
+    left 50%
+    z-index $layer-lowest
+    transform('translate(-50%,-50%)')
+  &.pd-form-processing
+    .pd-form-content
+      opacity .4

@@ -14,7 +14,7 @@ module.exports = {
     },
     {
       name: 'onTriggerClick',
-      type: 'Function',
+      type: '<void> Function',
       values: 'any'
     }
   ],
