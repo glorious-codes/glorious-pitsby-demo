@@ -26,25 +26,36 @@ module.exports = {
     {
       title: 'Theme Tag',
       controller: function(){
-        const { Tag } = reactComponents;
+        const { Col, Row, Tag } = reactComponents;
 
         return function(){
           return (
             <>
-              <Tag theme="danger">
-                Danger Tag
-              </Tag>
-              <Tag theme="success">
-                Success Tag
-              </Tag>
-              <Tag theme="warning">
-                Warning Tag
-              </Tag>
+            <Row>
+              <Col size="12">
+                <Tag theme="danger">
+                  Danger Tag
+                </Tag>
+              </Col>
+            </Row>
+            <Row>
+              <Col size="12">
+                <Tag theme="success">
+                  Success Tag
+                </Tag>
+              </Col>
+            </Row>
+            <Row>
+              <Col size="12">
+                <Tag theme="warning">
+                  Warning Tag
+                </Tag>
+              </Col>
+            </Row>
             </>
           );
         }
-      },
-      styles: '.pd-tag + .pd-tag { margin-left: 20px; }'
+      }
     }
   ]
 };
