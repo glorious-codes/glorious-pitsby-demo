@@ -3,6 +3,18 @@ module.exports = {
   description: 'Abstraction of a native input.',
   properties: [
     {
+      name: 'onChange',
+      type: '<void> Function',
+      values: 'any',
+      required: true
+    },
+    {
+      name: 'name',
+      type: 'String',
+      values: 'any',
+      required: true
+    },
+    {
       name: 'type',
       type: 'String',
       values: 'submit, reset'
@@ -21,12 +33,6 @@ module.exports = {
       name: 'disabled',
       type: 'Boolean',
       values: 'true/false'
-    },
-    {
-      name: 'onChange',
-      type: 'Function',
-      values: 'any',
-      required: true
     }
   ],
   examples: [
@@ -39,18 +45,18 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('');
 
-          const onChange = value => setValue(value);
+          const onChange = ({ value }) => setValue(value);
 
           return (
             <>
               <Row>
                 <Col size="3">
-                  <Input onChange={ onChange } />
+                  <Input name="example" onChange={ onChange } />
                 </Col>
               </Row>
               <Row>
                 <Col size="12">
-                  { value }
+                  Value: { value }
                 </Col>
               </Row>
             </>
@@ -67,18 +73,18 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('Pitsby');
 
-          const onChange = value => setValue(value);
+          const onChange = ({ value }) => setValue(value);
 
           return (
             <>
               <Row>
                 <Col size="3">
-                  <Input value={ value } onChange={ onChange } />
+                  <Input name="example" value={ value } onChange={ onChange } />
                 </Col>
               </Row>
               <Row>
                 <Col size="12">
-                  { value }
+                  Initial Value: { value }
                 </Col>
               </Row>
             </>
@@ -95,7 +101,7 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('');
 
-          const onChange = value => setValue(value);
+          const onChange = ({ value }) => setValue(value);
           const onSubmit = evt => {
             evt.preventDefault();
             setValue('');
@@ -106,7 +112,7 @@ module.exports = {
               <form onSubmit={onSubmit}>
                 <Row>
                   <Col size="3">
-                    <Input value={value} onChange={ onChange } required />
+                    <Input name="example" value={value} onChange={ onChange } required />
                   </Col>
                 </Row>
                 <Row>
@@ -131,12 +137,12 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('');
 
-          const onChange = value => setValue(value);
+          const onChange = ({ value }) => setValue(value);
 
           return (
             <Row>
               <Col size="3">
-                <Input onChange={ onChange } disabled />
+                <Input name="example" onChange={ onChange } disabled />
               </Col>
             </Row>
           );

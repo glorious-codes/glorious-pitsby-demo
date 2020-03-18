@@ -61,11 +61,12 @@ describe('Input', () => {
     expect(wrapper.prop('disabled')).toBeTruthy();
   });
 
-  it('should execute change callback on change passing input\'s value', () => {
-    const evtMock = { target: { value: 'Camargo' } };
+  it('should execute change callback on change passing input\'s name and value', () => {
+    const evtMock = { target: { name: 'name', value: 'Camargo' } };
     const onChange = jest.fn();
     const wrapper = mount({ onChange });
     wrapper.simulate('change', evtMock);
-    expect(onChange).toHaveBeenCalledWith(evtMock.target.value);
+    const { name, value } = evtMock.target;
+    expect(onChange).toHaveBeenCalledWith({ name, value });
   });
 });
