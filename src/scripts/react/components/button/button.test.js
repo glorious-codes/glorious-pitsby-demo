@@ -7,6 +7,7 @@ describe('Button', () => {
     return shallow(
       <Button
         type={ props.type }
+        block={ props.block }
         theme={ props.theme }
         disabled={ props.disabled }
         onClick={ props.onClick }>
@@ -33,7 +34,12 @@ describe('Button', () => {
 
   it('should optionally set a primary theme', () => {
     const wrapper = mount({ theme: 'primary' });
-    expect(wrapper.prop('className').includes('button-primary')).toEqual(true);
+    expect(wrapper.prop('className').includes('pd-button-primary')).toEqual(true);
+  });
+
+  it('should optionally display as block', () => {
+    const wrapper = mount({ block: true });
+    expect(wrapper.prop('className').includes('pd-button-block')).toEqual(true);
   });
 
   it('should be enabled by default', () => {

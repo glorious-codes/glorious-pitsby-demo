@@ -13,13 +13,18 @@ module.exports = {
       values: 'primary'
     },
     {
+      name: 'block',
+      type: 'Boolean',
+      values: 'true/false'
+    },
+    {
       name: 'disabled',
       type: 'Boolean',
       values: 'true/false'
     },
     {
       name: 'onClick',
-      type: 'Function',
+      type: '<void> Function',
       values: 'any'
     }
   ],
@@ -47,6 +52,20 @@ module.exports = {
           return (
             <Button theme="primary">
               Primary Button
+            </Button>
+          );
+        }
+      }
+    },
+    {
+      title: 'Block Button',
+      controller: function(){
+        const { Button } = reactComponents;
+
+        return function(){
+          return (
+            <Button block>
+              Block Button
             </Button>
           );
         }
