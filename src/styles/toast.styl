@@ -17,6 +17,7 @@ theme($background-color, $color)
   border-width 1px
   border-style solid
   border-radius(4px)
+  box-sizing(border-box)
   theme($color-grey-lighter, $color-grey-dark)
   &.pd-toast-danger
     theme($color-red-lighter, $color-red-dark)
@@ -45,3 +46,7 @@ theme($background-color, $color)
   position relative
   top -3px
   font-size $font-size-lg
+
++breakpoint('xs')
+  .pd-toast
+    width 100%

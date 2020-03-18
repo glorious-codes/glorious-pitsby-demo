@@ -42,7 +42,7 @@ module.exports = {
     {
       title: 'Theme Toast',
       controller: function(){
-        const { Button, toaster } = reactComponents;
+        const { Button, Col, Row, toaster } = reactComponents;
         const pop = (message, theme) => {
           toaster.pop({ message, theme })
         };
@@ -50,20 +50,31 @@ module.exports = {
         return function(){
           return (
             <>
-              <Button onClick={() => { pop('Success Toast', 'success'); }}>
-                Success Toast
-              </Button>
-              <Button onClick={() => { pop('Danger Toast', 'danger'); }}>
-                Danger Toast
-              </Button>
-              <Button onClick={() => { pop('Warning Toast', 'warning'); }}>
-                Warning Toast
-              </Button>
+              <Row>
+                <Col size="4">
+                  <Button onClick={() => { pop('Success Toast', 'success'); }} block>
+                    Success Toast
+                  </Button>
+                </Col>
+              </Row>
+              <Row>
+                <Col size="4">
+                  <Button onClick={() => { pop('Danger Toast', 'danger'); }} block>
+                    Danger Toast
+                  </Button>
+                </Col>
+              </Row>
+              <Row>
+                <Col size="4">
+                  <Button onClick={() => { pop('Warning Toast', 'warning'); }} block>
+                    Warning Toast
+                  </Button>
+                </Col>
+              </Row>
             </>
           );
         }
-      },
-      styles: '.pd-button + .pd-button { margin-left: 20px; }'
+      }
     }
   ]
 };
