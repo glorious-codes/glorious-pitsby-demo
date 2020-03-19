@@ -49,29 +49,23 @@ module.exports = {
 
         return function(){
           return (
-            <>
-              <Row>
-                <Col size="4">
-                  <Button onClick={() => { pop('Success Toast', 'success'); }} block>
-                    Success Toast
-                  </Button>
-                </Col>
-              </Row>
-              <Row>
-                <Col size="4">
-                  <Button onClick={() => { pop('Danger Toast', 'danger'); }} block>
-                    Danger Toast
-                  </Button>
-                </Col>
-              </Row>
-              <Row>
-                <Col size="4">
-                  <Button onClick={() => { pop('Warning Toast', 'warning'); }} block>
-                    Warning Toast
-                  </Button>
-                </Col>
-              </Row>
-            </>
+            <Row>
+              <Col size="4">
+                <Button onClick={() => { pop('Success Toast', 'success'); }} block>
+                  Success Toast
+                </Button>
+              </Col>
+              <Col size="4">
+                <Button onClick={() => { pop('Danger Toast', 'danger'); }} block>
+                  Danger Toast
+                </Button>
+              </Col>
+              <Col size="4">
+                <Button onClick={() => { pop('Warning Toast', 'warning'); }} block>
+                  Warning Toast
+                </Button>
+              </Col>
+            </Row>
           );
         }
       }
