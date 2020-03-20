@@ -1,0 +1,10 @@
+<div class="pd-alert" :class="classes">
+  <slot></slot>
+  <button
+    v-if="onTriggerClick"
+    type="button"
+    class="pd-alert-trigger"
+    @click="onTriggerClick()">
+    {{ triggerText }}
+  </button>
+</div>
