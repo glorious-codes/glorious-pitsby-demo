@@ -5,6 +5,7 @@ module.exports = {
   ],
   scripts: [
     './dist/reactComponents.js',
-    './dist/vanillaComponents.js'
+    './dist/vanillaComponents.js',
+    './dist/vueComponents.js'
   ]
 };
