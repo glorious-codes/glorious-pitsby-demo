@@ -20,6 +20,7 @@ module.exports = {
     libraryTarget: 'umd'
   },
   externals: {
+    '@vue': 'Vue',
     'react': 'React',
     'react-dom': 'ReactDOM'
   },
@@ -31,7 +32,10 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        include: [path.resolve(__dirname, project.scripts.source.root.vanilla)],
+        include: [
+          path.resolve(__dirname, project.scripts.source.root.vanilla),
+          path.resolve(__dirname, project.scripts.source.root.vue)
+        ],
         use: 'html-loader'
       },
       {
@@ -43,6 +47,8 @@ module.exports = {
   },
   resolve: {
     alias: {
+      '@vue$': 'vue/dist/vue.esm.js',
+      '@vue': `${__dirname}/${project.scripts.source.root.vue}`,
       '@react': `${__dirname}/${project.scripts.source.root.react}`,
       '@vanilla': `${__dirname}/${project.scripts.source.root.vanilla}`,
       '@styles': `${__dirname}/${project.styles.source.root}`

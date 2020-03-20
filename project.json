@@ -2,10 +2,12 @@
   "scripts": {
     "source": {
       "root": {
+        "vue": "src/scripts/vue/",
         "react": "src/scripts/react/",
         "vanilla": "src/scripts/vanilla/"
       },
       "libs": [
+        { "name": "vueComponents", "entry": "src/scripts/vue/index.js" },
         { "name": "reactComponents", "entry": "src/scripts/react/index.js" },
         { "name": "vanillaComponents", "entry": "src/scripts/vanilla/index.js" }
       ]
@@ -43,6 +45,7 @@
       "files": [
         "src/scripts/**/*.js",
         "!src/scripts/**/*.doc.js",
+        "!src/scripts/**/index.js",
         "!src/scripts/**/mocks/**/*.js"
       ]
     }
