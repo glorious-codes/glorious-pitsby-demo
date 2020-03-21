@@ -49,7 +49,7 @@ describe('Alert', () => {
 
   it('should set a trigger css class if a trigger action has been passed', () => {
     const wrapper = mount({ onTriggerClick: jest.fn() });
-    expect(wrapper.prop('className').includes('alert-has-trigger')).toEqual(true);
+    expect(wrapper.prop('className').includes('pd-alert-has-trigger')).toEqual(true);
   });
 
   it('should render some content', () => {
