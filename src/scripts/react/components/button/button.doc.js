@@ -89,7 +89,7 @@ module.exports = {
       title: 'Button with click listener',
       controller: function(){
         const { useState } = React;
-        const { Button } = reactComponents;
+        const { Button, Col, Row } = reactComponents;
 
         return function(){
           const [counter, setCounter] = useState(0);
@@ -110,15 +110,22 @@ module.exports = {
 
           return (
             <>
-              <Button theme="primary" onClick={ () => setCounter(counter + 1) }>
-                Primary Button
-              </Button>
-              { handleCounter(counter) }
+              <Row>
+                <Col size="12">
+                  <Button theme="primary" onClick={ () => setCounter(counter + 1) }>
+                    Primary Button
+                  </Button>
+                </Col>
+              </Row>
+              <Row>
+                <Col size="12">
+                  { handleCounter(counter) }
+                </Col>
+              </Row>
             </>
           );
         }
-      },
-      styles: '.counter-container { margin-top: 20px; }'
+      }
     }
   ]
 };
