@@ -61,26 +61,18 @@ function handleLoader(processing){
   return processing ? <Loader /> : null;
 }
 
-function getDefaultSuccessMessage(){
-  return 'Perfect! Request successfully processed.';
-}
-
 function buildErrorAlert(message, onTriggerClick){
   return {
     theme: 'danger',
-    message: message || getDefaultErrorMessage(),
+    message: message || 'Sorry, something went wrong.',
     onTriggerClick: onTriggerClick
   };
-}
-
-function getDefaultErrorMessage(){
-  return 'Sorry, something went wrong.';
 }
 
 function buildSuccessToat(message){
   return {
     theme: 'success',
-    message: message || getDefaultSuccessMessage()
+    message: message || 'Perfect! Request successfully processed.'
   };
 }
 
