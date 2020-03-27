@@ -5,6 +5,7 @@ import pdField from '@vue/components/field/field';
 import pdInput from '@vue/components/input/input';
 import pdLoader from '@vue/components/loader/loader';
 import pdRow from '@vue/components/row/row';
+import pdTextarea from '@vue/components/textarea/textarea';
 
 export default {
   pdAlert,
@@ -14,4 +15,5 @@ export default {
   pdInput,
   pdLoader,
   pdRow,
+  pdTextarea
 };
