@@ -15,6 +15,5 @@ module.exports = {
       collectDocsFrom: './src/scripts/react'
     }
   ],
-  custom: {},
   outputDirectory: './docs'
 };
