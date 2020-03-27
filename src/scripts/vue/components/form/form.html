@@ -1,0 +1,12 @@
+<form class="pd-form" :class="classes" @submit.prevent="handleSubmit()">
+  <pd-alert
+    v-if="alert"
+    :theme="alert.theme"
+    :onTriggerClick="alert.onTriggerClick">
+    {{ alert.message }}
+  </pd-alert>
+  <pd-loader v-if="processing" />
+  <div class="pd-form-content">
+    <slot></slot>
+  </div>
+</form>

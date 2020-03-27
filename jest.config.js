@@ -13,6 +13,8 @@ module.exports = {
   },
   moduleNameMapper: {
     '@vue$': 'vue/dist/vue.common.js',
+    '@vue/test-utils$': '@vue/test-utils',
+    '@vue\/(.*)$': `<rootDir>/${project.scripts.source.root.vue}$1`,
     '@react\/(.*)$': `<rootDir>/${project.scripts.source.root.react}$1`,
     '@vanilla\/(.*)$': `<rootDir>/${project.scripts.source.root.vanilla}$1`,
     '@styles\/(.*)$': `<rootDir>/${project.styles.source.root}$1`
