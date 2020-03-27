@@ -17,7 +17,7 @@ module.exports = {
     {
       name: 'type',
       type: 'String',
-      values: 'submit, reset'
+      values: 'color, date, datetime-local, email, file, hidden, image, month, number, password, range, search, tel, text, time, url, week'
     },
     {
       name: 'value',
@@ -108,22 +108,20 @@ module.exports = {
           };
 
           return (
-            <>
-              <form onSubmit={onSubmit}>
-                <Row>
-                  <Col size="3">
-                    <Input name="example" value={value} onChange={ onChange } required />
-                  </Col>
-                </Row>
-                <Row>
-                  <Col size="3">
-                    <Button type="submit" theme="primary">
-                      Submit
-                    </Button>
-                  </Col>
-                </Row>
-              </form>
-            </>
+            <form onSubmit={onSubmit}>
+              <Row>
+                <Col size="3">
+                  <Input name="example" value={value} onChange={ onChange } required />
+                </Col>
+              </Row>
+              <Row>
+                <Col size="3">
+                  <Button type="submit" theme="primary">
+                    Submit
+                  </Button>
+                </Col>
+              </Row>
+            </form>
           );
         }
       }

@@ -16,5 +16,5 @@ export const Input = ({ type = 'text', name, value, disabled, required, onChange
 
 function onInputChange({ target }, onChange){
   const { name, value } = target;
-  return onChange({ name, value });
+  onChange({ name, value });
 }
