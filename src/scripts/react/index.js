@@ -7,7 +7,6 @@ import { Form } from '@react/components/form/form';
 import { Loader } from '@react/components/loader/loader';
 import { Input } from '@react/components/input/input';
 import { Row } from '@react/components/row/row';
-import { Tag } from '@react/components/tag/tag';
 import { Textarea } from '@react/components/textarea/textarea';
 import toaster from '@react/services/toaster/toaster';
 
@@ -20,7 +19,6 @@ export default {
   Loader,
   Input,
   Row,
-  Tag,
   Textarea,
   toaster
 };
