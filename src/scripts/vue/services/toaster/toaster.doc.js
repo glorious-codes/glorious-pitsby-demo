@@ -27,15 +27,45 @@ module.exports = {
       controller: {
         methods: {
           onClick(){
-            const { toaster } = vueComponents.services;
+            const { toaster } = vueComponents;
             toaster.pop({ message: 'Default Toast' });
           }
         }
       },
       template: `
-      <button @click="onClick()">
+      <pd-button :onClick="onClick">
         Default Toast
-      </button>
+      </pd-button>
+      `
+    },
+    {
+      title: 'Theme Toast',
+      controller: {
+        methods: {
+          onClick(message, theme){
+            const { toaster } = vueComponents;
+            toaster.pop({ theme, message });
+          }
+        }
+      },
+      template: `
+      <p-row>
+        <pd-col size="4">
+          <pd-button :onClick="() => onClick('Success Toast', 'success')" block>
+            Success Toast
+          </pd-button>
+        </pd-col>
+        <pd-col size="4">
+          <pd-button :onClick="() => onClick('Danger Toast', 'danger')" block>
+            Danger Toast
+          </pd-button>
+        </pd-col>
+        <pd-col size="4">
+          <pd-button :onClick="() => onClick('Warning Toast', 'warning')" block>
+            Warning Toast
+          </pd-button>
+        </pd-col>
+      </p-row>
       `
     }
   ]
