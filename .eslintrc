@@ -7,6 +7,8 @@
     "node": true
   },
   "globals": {
+    "angular": true,
+    "inject": true,
     "vanillaComponents": true
   },
   "extends": [
