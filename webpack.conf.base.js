@@ -20,6 +20,7 @@ module.exports = {
     libraryTarget: 'umd'
   },
   externals: {
+    'angular': 'angular',
     '@vue': 'Vue',
     'react': 'React',
     'react-dom': 'ReactDOM'
@@ -33,6 +34,7 @@ module.exports = {
       {
         test: /\.html$/,
         include: [
+          path.resolve(__dirname, project.scripts.source.root.angular),
           path.resolve(__dirname, project.scripts.source.root.vanilla),
           path.resolve(__dirname, project.scripts.source.root.vue)
         ],
@@ -49,6 +51,7 @@ module.exports = {
     alias: {
       '@vue$': 'vue/dist/vue.esm.js',
       '@vue': `${__dirname}/${project.scripts.source.root.vue}`,
+      '@angular': `${__dirname}/${project.scripts.source.root.angular}`,
       '@react': `${__dirname}/${project.scripts.source.root.react}`,
       '@vanilla': `${__dirname}/${project.scripts.source.root.vanilla}`,
       '@styles': `${__dirname}/${project.styles.source.root}`

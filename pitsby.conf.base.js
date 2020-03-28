@@ -5,6 +5,11 @@ module.exports = {
       collectDocsFrom: './src/scripts/vanilla'
     },
     {
+      engine: 'angular',
+      collectDocsFrom: './src/scripts/angular',
+      moduleName: 'angularComponents'
+    },
+    {
       engine: "vue",
       collectDocsFrom: "./src/scripts/vue",
       importFrom: "./dist/vueComponents",

@@ -4,9 +4,11 @@
       "root": {
         "vue": "src/scripts/vue/",
         "react": "src/scripts/react/",
-        "vanilla": "src/scripts/vanilla/"
+        "vanilla": "src/scripts/vanilla/",
+        "angular": "src/scripts/angular/"
       },
       "libs": [
+        { "name": "angularComponents", "entry": "src/scripts/angular/index.js" },
         { "name": "vueComponents", "entry": "src/scripts/vue/index.js" },
         { "name": "reactComponents", "entry": "src/scripts/react/index.js" },
         { "name": "vanillaComponents", "entry": "src/scripts/vanilla/index.js" }
