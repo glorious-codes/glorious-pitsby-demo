@@ -12,3 +12,10 @@
   for $size in (1..10)
     &.pd-row-offset-{$size}
       margin-top $size * 10px
+
+pd-row
+  display block
+
+.pd-row + .pd-row,
+pd-row + pd-row
+  margin-top 20px
