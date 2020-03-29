@@ -30,9 +30,9 @@ module.exports = {
       },
       dependencies: ['toaster'],
       template: `
-      <button ng-click="$ctrl.popToaster()">
+      <pd-button on-click="$ctrl.popToaster">
         Default Toaster
-      </button>`
+      </pd-button>`
     }
   ]
 };
