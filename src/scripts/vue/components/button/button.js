@@ -21,7 +21,7 @@ const pdButton = {
   },
   methods: {
     onButtonClick(){
-      return this.onClick &&  this.onClick();
+      return this.onClick && this.onClick();
     }
   },
   computed: {
