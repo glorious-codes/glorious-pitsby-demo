@@ -1,0 +1,10 @@
+<div class="{{ $ctrl.cssClasses }}">
+  <ng-transclude></ng-transclude>
+  <button
+    ng-if="$ctrl.onTriggerClick"
+    type="button"
+    class="pd-alert-trigger"
+    ng-click="$ctrl.onTriggerClick()"
+    ng-bind="$ctrl.triggerButtonText">
+  </button>
+</div>
