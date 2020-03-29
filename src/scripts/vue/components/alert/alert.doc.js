@@ -6,6 +6,16 @@ module.exports = {
       name: 'theme',
       type: 'String',
       values: 'success, danger'
+    },
+    {
+      name: 'triggerText',
+      type: 'String',
+      values: 'any'
+    },
+    {
+      name: 'onTriggerClick',
+      type: '<void> Function',
+      values: 'any'
     }
   ],
   examples: [
