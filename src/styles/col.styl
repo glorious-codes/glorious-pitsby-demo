@@ -14,10 +14,12 @@ for $size in (1..11)
     margin-left ($size/12) * 100%
 
 +breakpoint('xs')
+  pd-col,
   .pd-col
     float left
     width 100%
-    & + .pd-col
-      margin-top 20px
   [class*=col-offset]
     margin-left 0
+  pd-col + pd-col,
+  .pd-col + .pd-col
+    margin-top 20px
