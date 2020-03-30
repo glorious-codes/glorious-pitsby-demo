@@ -1,4 +1,3 @@
-import '@styles/col.styl';
 import React from 'react';
 
 export const Col = ({ size, offset, children }) => {

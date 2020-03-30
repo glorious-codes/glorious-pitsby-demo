@@ -1,4 +1,3 @@
-import '@styles/alert.styl';
 import React from 'react';
 
 export const Alert = ({ theme, triggerText, onTriggerClick, children }) => {

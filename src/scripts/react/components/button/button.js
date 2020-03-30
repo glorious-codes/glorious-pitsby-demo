@@ -1,4 +1,3 @@
-import '@styles/button.styl';
 import React from 'react';
 
 export const Button = ({ type = 'button', block, theme, disabled, onClick, children }) => {

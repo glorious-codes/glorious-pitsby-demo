@@ -1,4 +1,3 @@
-import '@styles/field.styl';
 import React from 'react';
 
 export const Field = ({ label, children }) => {

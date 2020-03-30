@@ -1,4 +1,3 @@
-import '@styles/toaster.styl';
 import toastBuilder from '@vanilla/builders/toast/toast';
 
 const _public = {};

@@ -1,6 +1,5 @@
 module.exports = {
   styles: [
-    './dist/reactComponents.css',
     './dist/vanillaComponents.css'
   ],
   scripts: [

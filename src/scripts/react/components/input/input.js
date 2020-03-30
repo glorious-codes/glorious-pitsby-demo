@@ -1,4 +1,3 @@
-import '@styles/input.styl';
 import React from 'react';
 
 export const Input = ({ type = 'text', name, value, disabled, required, onChange }) => {

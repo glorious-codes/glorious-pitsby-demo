@@ -1,4 +1,3 @@
-import '@styles/textarea.styl';
 import React from 'react';
 
 export const Textarea = ({ name, value, disabled, required, onChange }) => {

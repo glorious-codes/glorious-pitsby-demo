@@ -1,4 +1,3 @@
-import '@styles/row.styl';
 import React from 'react';
 
 export const Row = ({ offset, children }) => {

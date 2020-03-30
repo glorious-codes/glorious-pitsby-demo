@@ -1,4 +1,3 @@
-import '@styles/native.styl';
 import { Alert } from '@react/components/alert/alert';
 import { Button } from '@react/components/button/button';
 import { Col } from '@react/components/col/col';

@@ -1,4 +1,3 @@
-import '@styles/form.styl';
 import React, { useState } from 'react';
 import { Alert } from '@react/components/alert/alert';
 import { Loader } from '@react/components/loader/loader';
