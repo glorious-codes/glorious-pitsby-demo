@@ -1,12 +1,6 @@
-<div class="pd-field">
+<div :class="cssClasses">
   <label>
     {{ label }}
-    <span
-      v-if="shouldShowAsterisk"
-      class="pd-field-asterisk"
-      data-field-asterisk>
-      *
-    </span>
   </label>
   <slot></slot>
 </div>

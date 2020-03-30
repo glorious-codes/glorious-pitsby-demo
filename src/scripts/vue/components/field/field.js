@@ -10,21 +10,29 @@ const pdField = {
   },
   data(){
     return {
-      shouldShowAsterisk: false
+      cssClasses: ''
     };
   },
   mounted(){
-    this.setAsteriskVisibility(this.containsRequiredChild(this.$el));
+    this.setCssClasses(buildCssClasses(this.$el));
   },
   methods: {
-    containsRequiredChild(element){
-      return !!element.querySelector('[required]');
-    },
-    setAsteriskVisibility(shouldShow){
-      this.shouldShowAsterisk = shouldShow;
+    setCssClasses(cssClasses){
+      this.cssClasses = cssClasses;
     }
   },
   template
 };
+
+function buildCssClasses(element){
+  const cssClasses = ['pd-field'];
+  if(containsRequiredChild(element))
+    cssClasses.push('pd-field-required');
+  return cssClasses.join(' ');
+}
+
+function containsRequiredChild(element){
+  return element && !!element.querySelector('[required="required"]');
+}
 
 export default pdField;

@@ -6,13 +6,11 @@ describe('Field', () => {
     return shallowMount(pdField, {propsData, slots: { default: content }});
   }
 
-  function countAsterisks(wrapper){
-    return wrapper.findAll('[data-field-asterisk]').length;
-  }
-
   it('should have appropriate css class', () => {
     const wrapper = mount({ label: 'Name' });
-    expect(wrapper.classes()).toContain('pd-field');
+    wrapper.vm.$nextTick(() => {
+      expect(wrapper.classes()).toContain('pd-field');
+    });
   });
 
   it('should render a label', () => {
@@ -21,17 +19,17 @@ describe('Field', () => {
     expect(wrapper.find('label').text()).toEqual(label);
   });
 
-  it('should not contain a label asterisk by default', () => {
+  it('should not contain required css class by default', () => {
     const wrapper = mount({ label: 'Name' });
     wrapper.vm.$nextTick(() => {
-      expect(countAsterisks(wrapper)).toEqual(0);
+      expect(wrapper.classes().includes('pd-field-required')).toEqual(false);
     });
   });
 
-  it('should contain a label asterisk if child input is required', () => {
-    const wrapper = mount({ label: 'Name' }, '<input type="text" required />');
+  it('should contain required css class if child input is required', () => {
+    const wrapper = mount({ label: 'Name' }, '<input type="text" required="required" />');
     wrapper.vm.$nextTick(() => {
-      expect(countAsterisks(wrapper)).toEqual(1);
+      expect(wrapper.classes().includes('pd-field-required')).toEqual(true);
     });
   });
 
