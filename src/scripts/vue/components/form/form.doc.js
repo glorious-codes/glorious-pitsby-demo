@@ -9,22 +9,22 @@ module.exports = {
       required: true
     },
     {
-      name: 'onSubmitSuccess',
+      name: 'on-submit-success',
       type: '<void> Function',
       values: 'any'
     },
     {
-      name: 'onSubmitError',
+      name: 'on-submit-error',
       type: '<void> Function',
       values: 'any'
     },
     {
-      name: 'successMessage',
+      name: 'success-message',
       type: 'String',
       values: 'any'
     },
     {
-      name: 'errorMessage',
+      name: 'error-message',
       type: 'String',
       values: 'any'
     }
@@ -59,9 +59,9 @@ module.exports = {
       template: `
       <div class="pd-form-container">
         <pd-form
-          :onSubmit="onSubmit"
-          :onSubmitSuccess="onSubmitSuccess"
-          successMessage="Success! Your message has been sent."
+          :on-submit="onSubmit"
+          :on-submit-success="onSubmitSuccess"
+          success-message="Success! Your message has been sent."
         >
           <pd-row>
             <pd-col size="12">
@@ -122,9 +122,9 @@ module.exports = {
       template: `
       <div class="pd-form-container">
         <pd-form
-          :onSubmit="onSubmit"
-          :onSubmitError="onSubmitError"
-          errorMessage="Ops, request failed."
+          :on-submit="onSubmit"
+          :on-submit-error="onSubmitError"
+          error-message="Ops, request failed."
         >
           <pd-row>
             <pd-col size="12">

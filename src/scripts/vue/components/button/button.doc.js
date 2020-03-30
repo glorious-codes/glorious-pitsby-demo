@@ -23,7 +23,7 @@ module.exports = {
       values: 'true/false'
     },
     {
-      name: 'onClick',
+      name: 'on-click',
       type: '<void> Function',
       values: 'any'
     }
@@ -83,7 +83,7 @@ module.exports = {
       <div>
         <pd-row>
           <pd-col size="12">
-            <pd-button theme="primary" :onClick="onClick">
+            <pd-button theme="primary" :on-click="onClick">
               Primary Button
             </pd-button>
           </pd-col>

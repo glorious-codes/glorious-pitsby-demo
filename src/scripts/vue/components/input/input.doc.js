@@ -29,7 +29,7 @@ module.exports = {
       values: 'true/false'
     },
     {
-      name: 'onChange',
+      name: 'on-change',
       type: '<void> Function',
       values: 'any'
     }

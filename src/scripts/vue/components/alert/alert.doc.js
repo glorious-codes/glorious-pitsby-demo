@@ -8,12 +8,12 @@ module.exports = {
       values: 'success, danger'
     },
     {
-      name: 'triggerText',
+      name: 'trigger-text',
       type: 'String',
       values: 'any'
     },
     {
-      name: 'onTriggerClick',
+      name: 'on-trigger-click',
       type: '<void> Function',
       values: 'any'
     }
@@ -58,7 +58,7 @@ module.exports = {
       template: `
       <pd-row>
         <pd-col size="12">
-          <pd-alert theme="danger" :onTriggerClick="onRetry">
+          <pd-alert theme="danger" :on-trigger-click="onRetry">
             Something went wrong. Please, try again.
           </pd-alert>
         </pd-col>
@@ -76,7 +76,7 @@ module.exports = {
       template: `
       <pd-row>
         <pd-col size="12">
-          <pd-alert theme="danger" triggerText="Try Again" :onTriggerClick="onRetry">
+          <pd-alert theme="danger" trigger-text="Try Again" :on-trigger-click="onRetry">
             Sorry, something went wrong.
           </pd-alert>
         </pd-col>
