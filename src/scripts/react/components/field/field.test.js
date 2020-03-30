@@ -23,14 +23,14 @@ describe('Field', () => {
     expect(wrapper.find('label').text().trim()).toEqual(label);
   });
 
-  it('should not contain a label asterisk by default', () => {
+  it('should not contain required css class by default', () => {
     const wrapper = mount();
-    expect(wrapper.find('[data-field-asterisk]').length).toEqual(0);
+    expect(wrapper.prop('className').includes('pd-field-required')).toEqual(false);
   });
 
-  it('should contain a label asterisk if child input is required', () => {
+  it('should contain required css class if child input is required', () => {
     const wrapper = mount({ content: <Input required /> });
-    expect(wrapper.find('[data-field-asterisk]').length).toEqual(1);
+    expect(wrapper.prop('className').includes('pd-field-required')).toEqual(true);
   });
 
   it('should render some content', () => {

@@ -2,17 +2,18 @@ import React from 'react';
 
 export const Field = ({ label, children }) => {
   return (
-    <div className="pd-field">
+    <div className={ buildCssClasses(children) }>
       <label>
         { label }
-        { handleAsterisk(children) }
       </label>
       { children }
     </div>
   );
 };
 
-function handleAsterisk(children){
+function buildCssClasses(children){
+  const cssClasses = ['pd-field'];
   if(children && children.props.required)
-    return <span className="pd-field-asterisk" data-field-asterisk>*</span>;
+    cssClasses.push('pd-field-required');
+  return cssClasses.join(' ');
 }
