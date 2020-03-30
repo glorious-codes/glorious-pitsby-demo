@@ -1,0 +1,15 @@
+<form
+  class="pd-form"
+  ng-class="{ 'pd-form-processing': $ctrl.processing }"
+  ng-submit="$ctrl.handleSubmit()">
+  <pd-alert
+    ng-if="$ctrl.alert"
+    data-theme="{{ $ctrl.alert.theme }}"
+    on-trigger-click="$ctrl.alert.onTriggerClick">
+    {{ $ctrl.alert.message }}
+  </pd-alert>
+  <pd-loader ng-if="$ctrl.processing"></pd-loader>
+  <div class="pd-form-content">
+    <ng-transclude></ng-transclude>
+  </div>
+</form>
