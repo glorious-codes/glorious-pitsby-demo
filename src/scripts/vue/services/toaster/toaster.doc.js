@@ -44,7 +44,7 @@ module.exports = {
         methods: {
           onClick(message, theme){
             const { toaster } = vueComponents;
-            toaster.pop({ theme, message });
+            toaster.pop({ message, theme });
           }
         }
       },
