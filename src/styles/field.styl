@@ -2,12 +2,21 @@
 
 .pd-field
   label
-    display block
+    position relative
+    display inline-block
     margin-bottom 5px
     color $color-grey-dark
     font-size $font-size-xxxs
     font-weight 600
     text-transform uppercase
+  &.pd-field-required
+    label
+      &:after
+        position absolute
+        content '*'
+        top -2px
+        right -8px
+        color $color-red
 
 .pd-field-asterisk
   position relative
