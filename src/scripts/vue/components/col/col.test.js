@@ -11,12 +11,7 @@ describe('Column', () => {
     });
   }
 
-  it('should have appropriate css class', () => {
-    const wrapper = mount({ size: 3 });
-    expect(wrapper.classes()).toContain('pd-col');
-  });
-
-  it('should optionally set a size', () => {
+  it('should set a size', () => {
     const wrapper = mount({ size: 3 });
     expect(wrapper.classes()).toContain('pd-col-3');
   });

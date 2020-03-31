@@ -20,31 +20,31 @@ module.exports = {
       template: `
       <div>
         <div class="pd-row">
-          <div class="pd-col pd-col-12"><p>12 cols</p></div>
+          <div class="pd-col-12"><p>12 cols</p></div>
         </div>
         <div class="pd-row">
-          <div class="pd-col pd-col-6"><p>6 cols</p></div>
-          <div class="pd-col pd-col-6"><p>6 cols</p></div>
+          <div class="pd-col-6"><p>6 cols</p></div>
+          <div class="pd-col-6"><p>6 cols</p></div>
         </div>
         <div class="pd-row">
-          <div class="pd-col pd-col-3"><p>3 cols</p></div>
-          <div class="pd-col pd-col-3"><p>3 cols</p></div>
-          <div class="pd-col pd-col-3"><p>3 cols</p></div>
-          <div class="pd-col pd-col-3"><p>3 cols</p></div>
+          <div class="pd-col-3"><p>3 cols</p></div>
+          <div class="pd-col-3"><p>3 cols</p></div>
+          <div class="pd-col-3"><p>3 cols</p></div>
+          <div class="pd-col-3"><p>3 cols</p></div>
         </div>
         <div class="pd-row">
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
-          <div class="pd-col pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
+          <div class="pd-col-1"><p>1 col</p></div>
         </div>
       </div>`,
       styles
@@ -55,14 +55,14 @@ module.exports = {
       template:`
       <div>
         <div class="pd-row">
-          <div class="pd-col pd-col-6 pd-col-offset-6"><p>6 cols</p></div>
+          <div class="pd-col-6 pd-col-offset-6"><p>6 cols</p></div>
         </div>
         <div class="pd-row">
-          <div class="pd-col pd-col-6"><p>6 cols</p></div>
+          <div class="pd-col-6"><p>6 cols</p></div>
         </div>
         <div class="pd-row">
-          <div class="pd-col pd-col-3 pd-col-offset-6"><p>3 cols</p></div>
-          <div class="pd-col pd-col-1 pd-col-offset-2"><p>1 col</p></div>
+          <div class="pd-col-3 pd-col-offset-6"><p>3 cols</p></div>
+          <div class="pd-col-1 pd-col-offset-2"><p>1 col</p></div>
         </div>
       </div>`,
       styles
@@ -71,16 +71,16 @@ module.exports = {
       title: 'Nested Columns',
       template: `
       <div class="pd-row">
-        <div class="pd-col pd-col-6"><p>6 cols</p></div>
-        <div class="pd-col pd-col-6">
+        <div class="pd-col-6"><p>6 cols</p></div>
+        <div class="pd-col-6">
           <div class="pd-row">
-            <div class="pd-col pd-col-8"><p>8 cols</p></div>
-            <div class="pd-col pd-col-4"><p>4 cols</p></div>
+            <div class="pd-col-8"><p>8 cols</p></div>
+            <div class="pd-col-4"><p>4 cols</p></div>
           </div>
           <div class="pd-row">
-            <div class="pd-col pd-col-4"><p>4 cols</p></div>
-            <div class="pd-col pd-col-4"><p>4 cols</p></div>
-            <div class="pd-col pd-col-4"><p>4 cols</p></div>
+            <div class="pd-col-4"><p>4 cols</p></div>
+            <div class="pd-col-4"><p>4 cols</p></div>
+            <div class="pd-col-4"><p>4 cols</p></div>
           </div>
         </div>
       </div>`,

@@ -1,6 +1,6 @@
 @require '_mixins'
 
-.pd-col
+[class*=pd-col]
   float left
   padding 0 10px
   box-sizing border-box
@@ -15,11 +15,11 @@ for $size in (1..11)
 
 +breakpoint('xs')
   pd-col,
-  .pd-col
+  [class*=pd-col]
     float left
     width 100%
-  [class*=col-offset]
+  [class*=pd-col-offset]
     margin-left 0
   pd-col + pd-col,
-  .pd-col + .pd-col
+  [class*=pd-col] + [class*=pd-col]
     margin-top 20px

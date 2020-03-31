@@ -11,7 +11,7 @@ export const Col = ({ size, offset, children }) => {
 function buildClassName(size, offset){
   const sizeClass = buildSizeCssClass(size);
   const offsetClass = buildOffsetCssClass(offset);
-  return `${getBaseCssClass()} ${sizeClass} ${offsetClass}`.trim();
+  return `${sizeClass} ${offsetClass}`.trim();
 }
 
 function buildSizeCssClass(size){

@@ -14,14 +14,14 @@ module.exports = {
       template: `
       <div>
         <div class="pd-row">
-          <div class="pd-col pd-col-12">
+          <div class="pd-col-12">
             <div class="pd-alert pd-alert-success">
               Success Alert.
             </div>
           </div>
         </div>
         <div class="pd-row">
-          <div class="pd-col pd-col-12">
+          <div class="pd-col-12">
             <div class="pd-alert pd-alert-danger">
               Danger Alert.
             </div>
@@ -41,7 +41,7 @@ module.exports = {
       },
       template: `
       <div class="pd-row">
-        <div class="pd-col pd-col-12">
+        <div class="pd-col-12">
           <div class="pd-alert pd-alert-danger">
             Something went wrong. Please, try again.
             <button type="button" class="pd-alert-trigger">

@@ -5,7 +5,7 @@ module.exports = {
       title: 'Default Field',
       template: `
       <div class="pd-row">
-        <div class="pd-col pd-col-4">
+        <div class="pd-col-4">
           <div class="pd-field">
             <label>
               Email Address
@@ -19,7 +19,7 @@ module.exports = {
       title: 'Required Field',
       template: `
       <div class="pd-row">
-        <div class="pd-col pd-col-4">
+        <div class="pd-col-4">
           <div class="pd-field pd-field-required">
             <label>
               Email Address

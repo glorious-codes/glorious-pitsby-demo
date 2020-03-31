@@ -30,12 +30,12 @@ module.exports = {
       template: `
       <div>
         <div class="pd-row">
-          <div class="pd-col pd-col-12">
+          <div class="pd-col-12">
             <p>Default Row</p>
           </div>
         </div>
         <div class="pd-row pd-row-offset-5">
-          <div class="pd-col pd-col-12">
+          <div class="pd-col-12">
             <p>Offset Row</p>
           </div>
         </div>

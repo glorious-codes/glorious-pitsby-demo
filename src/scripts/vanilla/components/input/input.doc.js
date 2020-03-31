@@ -5,7 +5,7 @@ module.exports = {
       title: 'Default Input',
       template: `
       <div class="pd-row">
-        <div class="pd-col pd-col-4">
+        <div class="pd-col-4">
           <input type="text" class="pd-input" />
         </div>
       </div>`
@@ -14,7 +14,7 @@ module.exports = {
       title: 'Disabled Input',
       template: `
       <div class="pd-row">
-        <div class="pd-col pd-col-4">
+        <div class="pd-col-4">
           <input type="text" class="pd-input" disabled />
         </div>
       </div>`

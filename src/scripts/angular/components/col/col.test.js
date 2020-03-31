@@ -19,12 +19,7 @@ describe('Column', () => {
     });
   });
 
-  it('should have appropriate css class', () => {
-    const element = compile();
-    expect(element.find('div').attr('class')).toEqual('pd-col');
-  });
-
-  it('should optionally set a size', () => {
+  it('should set a size', () => {
     const element = compile({ size: 3 });
     expect(element.find('div').attr('class').includes('pd-col-3')).toEqual(true);
   });

@@ -57,7 +57,7 @@ module.exports = {
         <form class="pd-form">
           <div class="pd-form-content">
             <div class="pd-row">
-              <div class="pd-col pd-col-12">
+              <div class="pd-col-12">
                 <div class="pd-field pd-field-required">
                   <label>Name</label>
                   <input class="pd-input" name="name" required />
@@ -65,7 +65,7 @@ module.exports = {
               </div>
             </div>
             <div class="pd-row">
-              <div class="pd-col pd-col-12">
+              <div class="pd-col-12">
                 <div class="pd-field pd-field-required">
                   <label>Email</label>
                   <input class="pd-input" type="email" name="email" required />
@@ -73,7 +73,7 @@ module.exports = {
               </div>
             </div>
             <div class="pd-row">
-              <div class="pd-col pd-col-12">
+              <div class="pd-col-12">
                 <div class="pd-field pd-field-required">
                   <label>Message</label>
                   <textarea class="pd-textarea" name="message" required></textarea>
@@ -81,12 +81,12 @@ module.exports = {
               </div>
             </div>
             <div class="pd-row">
-              <div class="pd-col pd-col-6">
+              <div class="pd-col-6">
                 <button class="pd-button pd-button-primary pd-button-block" type="submit">
                   Send
                 </button>
               </div>
-              <div class="pd-col pd-col-6">
+              <div class="pd-col-6">
                 <button class="pd-button pd-button-block" type="reset">
                   Clear
                 </button>
@@ -168,7 +168,7 @@ module.exports = {
         <form class="pd-form">
           <div class="pd-form-content">
             <div class="pd-row">
-              <div class="pd-col pd-col-12">
+              <div class="pd-col-12">
                 <div class="pd-field pd-field-required">
                   <label>Name</label>
                   <input class="pd-input" name="name" required />
@@ -176,7 +176,7 @@ module.exports = {
               </div>
             </div>
             <div class="pd-row">
-              <div class="pd-col pd-col-12">
+              <div class="pd-col-12">
                 <div class="pd-field pd-field-required">
                   <label>Email</label>
                   <input class="pd-input" type="email" name="email" required />
@@ -184,7 +184,7 @@ module.exports = {
               </div>
             </div>
             <div class="pd-row">
-              <div class="pd-col pd-col-6 pd-col-offset-3">
+              <div class="pd-col-6 pd-col-offset-3">
                 <button class="pd-button pd-button-primary pd-button-block" type="submit">
                   Subscribe
                 </button>

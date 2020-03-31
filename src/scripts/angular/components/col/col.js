@@ -8,7 +8,7 @@ function controller(){
   };
 
   function buildCssClasses(size, offset){
-    const cssClasses = ['pd-col'];
+    const cssClasses = [];
     if(isSizeValid(size))
       cssClasses.push(`pd-col-${size}`);
     if(isOffsetValid(offset))
