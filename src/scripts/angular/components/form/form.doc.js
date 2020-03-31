@@ -1,4 +1,4 @@
-const styles = '.pd-form-container { margin: 0 auto; max-width: 320px; }';
+const styles = '[data-form-container] { margin: 0 auto; max-width: 320px; }';
 
 module.exports = {
   name: 'Form',
@@ -62,7 +62,7 @@ module.exports = {
         $ctrl.$onInit();
       },
       template: `
-      <div class="pd-form-container">
+      <div data-form-container>
         <pd-form
           on-submit="$ctrl.onSubmit"
           on-submit-success="$ctrl.onSubmitSuccess"
@@ -114,8 +114,7 @@ module.exports = {
             </pd-col>
           </pd-row>
         </pd-form>
-      </div>
-      `,
+      </div>`,
       styles
     },
     {
@@ -148,7 +147,7 @@ module.exports = {
       },
       dependencies: ['$timeout'],
       template: `
-      <div class="pd-form-container">
+      <div data-form-container>
         <pd-form
           on-submit="$ctrl.onSubmit"
           on-submit-error="$ctrl.onSubmitError"
@@ -185,8 +184,7 @@ module.exports = {
             </pd-col>
           </pd-row>
         </pd-form>
-      </div>
-      `,
+      </div>`,
       styles
     }
   ]

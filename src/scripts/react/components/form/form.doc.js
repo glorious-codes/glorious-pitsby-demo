@@ -1,3 +1,5 @@
+const styles = '[data-form-container] { margin: 0 auto; max-width: 320px; }';
+
 module.exports = {
   name: 'Form',
   description: 'Abstraction of a native form.',
@@ -60,7 +62,7 @@ module.exports = {
           };
 
           return (
-            <div className="pd-form-container">
+            <div data-form-container>
               <Form
                 onSubmit={onSubmit}
                 onSubmitSuccess={onSubmitSuccess}
@@ -100,7 +102,7 @@ module.exports = {
           );
         }
       },
-      styles: '.pd-form-container { margin: 0 auto; max-width: 320px; }'
+      styles
     },
     {
       title: 'Failing Form with Custom Error Message',
@@ -131,7 +133,7 @@ module.exports = {
           };
 
           return (
-            <div className="pd-form-container">
+            <div data-form-container>
               <Form
                 onSubmit={onSubmit}
                 onSubmitError={onSubmitError}
@@ -161,7 +163,7 @@ module.exports = {
           );
         }
       },
-      styles: '.pd-form-container { margin: 0 auto; max-width: 320px; }'
+      styles
     }
   ]
 };
