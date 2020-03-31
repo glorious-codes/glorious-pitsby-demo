@@ -10,15 +10,18 @@ module.exports = {
       moduleName: 'angularComponents'
     },
     {
-      engine: "vue",
-      collectDocsFrom: "./src/scripts/vue",
-      importFrom: "./dist/vueComponents",
-      libraryName: "vueComponents"
+      engine: 'vue',
+      collectDocsFrom: './src/scripts/vue',
+      importFrom: './dist/vueComponents',
+      libraryName: 'vueComponents'
     },
     {
       engine: 'react',
       collectDocsFrom: './src/scripts/react'
     }
+  ],
+  other: [
+    './dist/images/'
   ],
   outputDirectory: './docs'
 };
