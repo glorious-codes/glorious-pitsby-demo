@@ -13,7 +13,6 @@ const styles = `
 
 module.exports = {
   name: 'Row',
-  description: 'A container for grid columns.',
   examples: [
     {
       title: 'Default Row',
@@ -22,8 +21,7 @@ module.exports = {
         <div class="pd-col-12">
           <p>Default Row</p>
         </div>
-      </div>
-      `,
+      </div>`,
       styles
     },
     {
@@ -41,8 +39,7 @@ module.exports = {
             <p>Offset Row</p>
           </div>
         </div>
-      </div>
-      `,
+      </div>`,
       styles
     }
   ]

@@ -1,6 +1,5 @@
 module.exports = {
   name: 'Button',
-  description: 'Element to be used to trigger actions.',
   examples: [
     {
       title: 'Default Button',
@@ -14,6 +13,13 @@ module.exports = {
       description: 'You can style a button according themes.',
       template: `
       <button class="pd-button pd-button-primary">
+        Primary Button
+      </button>`
+    },
+    {
+      title: 'Disabled Button',
+      template: `
+      <button class="pd-button pd-button-primary" disabled>
         Primary Button
       </button>`
     },

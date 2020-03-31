@@ -13,7 +13,6 @@ const styles = `
 
 module.exports = {
   name: 'Column',
-  description: 'Abstraction of a grid column to be used inside a row.',
   examples: [
     {
       title: 'Sized Columns',
@@ -47,8 +46,7 @@ module.exports = {
           <div class="pd-col pd-col-1"><p>1 col</p></div>
           <div class="pd-col pd-col-1"><p>1 col</p></div>
         </div>
-      </div>
-      `,
+      </div>`,
       styles
     },
     {
@@ -66,8 +64,7 @@ module.exports = {
           <div class="pd-col pd-col-3 pd-col-offset-6"><p>3 cols</p></div>
           <div class="pd-col pd-col-1 pd-col-offset-2"><p>1 col</p></div>
         </div>
-      </div>
-      `,
+      </div>`,
       styles
     },
     {
@@ -86,8 +83,7 @@ module.exports = {
             <div class="pd-col pd-col-4"><p>4 cols</p></div>
           </div>
         </div>
-      </div>
-      `,
+      </div>`,
       styles
     },
   ],
