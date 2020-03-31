@@ -32,7 +32,9 @@ module.exports = {
         });
       },
       template: `
-      <button type="button">Pop Toast</button>
+      <button class="pd-button" type="button">
+        Default Toast
+      </button>
       `
     },
     {
@@ -51,10 +53,22 @@ module.exports = {
         buttons.forEach(button => element.addEventListener('click', onButtonClick));
       },
       template: `
-      <div>
-        <button type="button" data-theme="danger">Danger Toast</button>
-        <button type="button" data-theme="success">Success Toast</button>
-        <button type="button" data-theme="warning">Warning Toast</button>
+      <div class="pd-row">
+        <div class="pd-col pd-col-4">
+          <button class="pd-button pd-button-block" type="button" data-theme="success">
+            Success Toast
+          </button>
+        </div>
+        <div class="pd-col pd-col-4">
+          <button class="pd-button pd-button-block" type="button" data-theme="danger">
+            Danger Toast
+          </button>
+        </div>
+        <div class="pd-col pd-col-4">
+          <button class="pd-button pd-button-block" type="button" data-theme="warning">
+            Warning Toast
+          </button>
+        </div>
       </div>
       `
     }
