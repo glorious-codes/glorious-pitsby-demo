@@ -27,6 +27,11 @@ describe('Button', () => {
     expect(wrapper.classes()).toContain('pd-button-primary');
   });
 
+  it('should optionally set a secondary theme', () => {
+    const wrapper = mount({ theme: 'secondary' });
+    expect(wrapper.classes()).toContain('pd-button-secondary');
+  });
+
   it('should optionally display as block', () => {
     const wrapper = mount({ block: true });
     expect(wrapper.classes()).toContain('pd-button-block');
