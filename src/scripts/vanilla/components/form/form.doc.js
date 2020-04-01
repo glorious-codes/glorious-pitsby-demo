@@ -136,7 +136,7 @@ module.exports = {
 
         function buildErrorAlert(message){
           const alert = document.createElement('div');
-          alert.setAttribute('class', 'pd-alert pd-alert-danger');
+          alert.setAttribute('class', 'pd-alert pd-alert-danger pd-alert-has-trigger');
           alert.setAttribute('data-alert', '');
           alert.textContent = message;
           alert.appendChild(buildErrorAlertTrigger());

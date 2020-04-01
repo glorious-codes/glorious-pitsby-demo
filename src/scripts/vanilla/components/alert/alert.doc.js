@@ -42,7 +42,7 @@ module.exports = {
       template: `
       <div class="pd-row">
         <div class="pd-col-12">
-          <div class="pd-alert pd-alert-danger">
+          <div class="pd-alert pd-alert-danger pd-alert-has-trigger">
             Something went wrong. Please, try again.
             <button type="button" class="pd-alert-trigger">
               Retry
