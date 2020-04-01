@@ -1,9 +1,12 @@
 @require '_variables'
 @require '_mixins'
 
-themed-button($text-color, $bg-color)
+themed-button($text-color, $bg-color, $border-color)
   background-color $bg-color
   color $text-color
+  border-width 1px
+  border-style solid
+  border-color $border-color
   &:disabled
     color alpha($text-color, .8)
     background-color alpha($bg-color, .9)
@@ -13,8 +16,6 @@ themed-button($text-color, $bg-color)
 
 .pd-button
   padding 0 35px
-  color $color-grey-dark
-  background-color $color-grey-lighter
   font-size $font-size-xs
   font-weight 600
   text-align center
@@ -24,14 +25,23 @@ themed-button($text-color, $bg-color)
   white-space nowrap
   overflow hidden
   text-overflow ellipsis
-
-  themed-button($color-grey-dark, $color-grey-light)
+  themed-button($color-grey-dark, $color-grey-light, $color-grey-light)
   webkit-appearance(none)
   transition(all, 300ms)
   border-radius(4px)
   box-sizing(border-box)
   unselectable()
   &.pd-button-primary
-    themed-button($color-grey-lighter, $color-purple)
+    themed-button($color-grey-lighter, $color-blue, $color-blue)
+  &.pd-button-secondary
+    themed-button($color-blue, transparent, $color-blue)
+    +highlight()
+      color $color-blue-dark
+      background-color transparent
+      border-color $color-blue-dark
+    &:disabled
+      color alpha($color-blue, .8)
+      background-color transparent
+      border-color alpha($color-blue, .5)
   &.pd-button-block
     width 100%
