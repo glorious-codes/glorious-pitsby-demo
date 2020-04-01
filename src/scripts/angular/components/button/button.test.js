@@ -43,6 +43,11 @@ describe('Button', () => {
     expect(element.find('button').attr('class').includes('pd-button-primary')).toEqual(true);
   });
 
+  it('should optionally set a secondary theme', () => {
+    const element = compile({ theme: 'secondary' });
+    expect(element.find('button').attr('class').includes('pd-button-secondary')).toEqual(true);
+  });
+
   it('should optionally display as block', () => {
     const element = compile({ block: true });
     expect(element.find('button').attr('class').includes('pd-button-block')).toEqual(true);

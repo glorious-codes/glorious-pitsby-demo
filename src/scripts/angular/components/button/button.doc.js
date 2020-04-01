@@ -10,7 +10,7 @@ module.exports = {
     {
       name: 'data-theme',
       type: 'String',
-      values: 'primary'
+      values: 'primary, secondary'
     },
     {
       name: 'data-block',
@@ -39,22 +39,45 @@ module.exports = {
     {
       title: 'Theme Button',
       template: `
-      <pd-button data-theme="primary">
-        Primary Button
-      </pd-button>`
+      <pd-row>
+        <pd-col size="3">
+          <pd-button data-theme="primary">
+            Primary Button
+          </pd-button>
+        </pd-col>
+        <pd-col size="3">
+          <pd-button data-theme="secondary">
+            Secondary Button
+          </pd-button>
+        </pd-col>
+      </pd-row>`
+    },
+    {
+      title: 'Disabled Button',
+      template: `
+      <pd-row>
+        <pd-col size="3">
+          <pd-button disabled="true">
+            Default Button
+          </pd-button>
+        </pd-col>
+        <pd-col size="3">
+          <pd-button data-theme="primary" disabled="true">
+            Primary Button
+          </pd-button>
+        </pd-col>
+        <pd-col size="3">
+          <pd-button data-theme="secondary" disabled="true">
+            Secondary Button
+          </pd-button>
+        </pd-col>
+      </pd-row>`
     },
     {
       title: 'Block Button',
       template: `
       <pd-button data-block="true">
         Block Button
-      </pd-button>`
-    },
-    {
-      title: 'Disabled Button',
-      template: `
-      <pd-button theme="primary" data-disabled="true">
-        Disabled Button
       </pd-button>`
     },
     {
