@@ -37,6 +37,11 @@ describe('Button', () => {
     expect(wrapper.prop('className').includes('pd-button-primary')).toEqual(true);
   });
 
+  it('should optionally set a primary theme', () => {
+    const wrapper = mount({ theme: 'secondary' });
+    expect(wrapper.prop('className').includes('pd-button-secondary')).toEqual(true);
+  });
+
   it('should optionally display as block', () => {
     const wrapper = mount({ block: true });
     expect(wrapper.prop('className').includes('pd-button-block')).toEqual(true);

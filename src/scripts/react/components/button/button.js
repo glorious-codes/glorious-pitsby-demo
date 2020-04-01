@@ -32,7 +32,7 @@ function handleBlockCssClass(cssClasses, block){
 }
 
 function isThemeValid(theme){
-  return ['primary'].includes(theme);
+  return ['primary', 'secondary'].includes(theme);
 }
 
 function getBaseCssClass(){

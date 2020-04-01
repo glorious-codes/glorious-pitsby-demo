@@ -10,7 +10,7 @@ module.exports = {
     {
       name: 'theme',
       type: 'String',
-      values: 'primary'
+      values: 'primary, secondary'
     },
     {
       name: 'block',
@@ -46,13 +46,50 @@ module.exports = {
     {
       title: 'Theme Button',
       controller: function(){
-        const { Button } = reactComponents;
+        const { Col, Button, Row } = reactComponents;
 
         return function(){
           return (
-            <Button theme="primary">
-              Primary Button
-            </Button>
+            <Row>
+              <Col size="3">
+                <Button theme="primary">
+                  Primary Button
+                </Button>
+              </Col>
+              <Col size="3">
+                <Button theme="secondary">
+                  Secondary Button
+                </Button>
+              </Col>
+            </Row>
+          );
+        }
+      }
+    },
+    {
+      title: 'Disabled Button',
+      controller: function(){
+        const { Col, Button, Row } = reactComponents;
+
+        return function(){
+          return (
+            <Row>
+              <Col size="3">
+                <Button disabled>
+                  Default Button
+                </Button>
+              </Col>
+              <Col size="3">
+                <Button theme="primary" disabled>
+                  Primary Button
+                </Button>
+              </Col>
+              <Col size="3">
+                <Button theme="secondary" disabled>
+                  Secondary Button
+                </Button>
+              </Col>
+            </Row>
           );
         }
       }
@@ -66,20 +103,6 @@ module.exports = {
           return (
             <Button block>
               Block Button
-            </Button>
-          );
-        }
-      }
-    },
-    {
-      title: 'Disabled Button',
-      controller: function(){
-        const { Button } = reactComponents;
-
-        return function(){
-          return (
-            <Button theme="primary" disabled={ true }>
-              Primary Button
             </Button>
           );
         }
