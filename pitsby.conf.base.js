@@ -1,15 +1,6 @@
 module.exports = {
   projects: [
     {
-      engine: 'vanilla',
-      collectDocsFrom: './src/scripts/vanilla'
-    },
-    {
-      engine: 'angular',
-      collectDocsFrom: './src/scripts/angular',
-      moduleName: 'angularComponents'
-    },
-    {
       engine: 'vue',
       collectDocsFrom: './src/scripts/vue',
       importFrom: './dist/vueComponents',
@@ -18,6 +9,15 @@ module.exports = {
     {
       engine: 'react',
       collectDocsFrom: './src/scripts/react'
+    },
+    {
+      engine: 'angular',
+      collectDocsFrom: './src/scripts/angular',
+      moduleName: 'angularComponents'
+    },
+    {
+      engine: 'vanilla',
+      collectDocsFrom: './src/scripts/vanilla'
     }
   ],
   other: [
