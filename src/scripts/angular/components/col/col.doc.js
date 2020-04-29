@@ -13,7 +13,7 @@ const styles = `
 
 module.exports = {
   name: 'Column',
-  description: 'Abstraction of a grid column to be used inside a row.',
+  description: 'Abstraction of a grid column to be used inside a row. Layout becomes single-column on mobile and offsets get removed.',
   properties: [
     {
       name: 'data-size',

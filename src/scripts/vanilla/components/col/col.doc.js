@@ -16,7 +16,7 @@ module.exports = {
   examples: [
     {
       title: 'Sized Columns',
-      description: 'You can size a column using size css class from "pd-col-1" to "pd-col-12".',
+      description: 'Abstraction of a grid column to be used inside a row. Layout becomes single-column on mobile and offsets get removed.',
       template: `
       <div>
         <div class="pd-row">
