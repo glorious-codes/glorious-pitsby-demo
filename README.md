@@ -1,7 +1,8 @@
 # Glorious Pitsby Demo
 > Demo documentation generated with https://pitsby.com
 
-[![CircleCI](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master.svg?style=svg)](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master) [![codecov](https://codecov.io/gh/glorious-codes/glorious-pitsby-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/glorious-codes/glorious-pitsby-demo)
+[![CircleCI](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master.svg?style=svg)](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/glorious-codes/glorious-pitsby-demo/badge.svg?branch=master)](https://coveralls.io/github/glorious-codes/glorious-pitsby-demo?branch=master)
 
 ## Contributing
 
