@@ -37,8 +37,6 @@ module.exports = {
         function setValue(value){
           $ctrl.value = value;
         }
-
-        $ctrl.$onInit();
       },
       template: `
       <form ng-submit="$ctrl.onSubmit()">

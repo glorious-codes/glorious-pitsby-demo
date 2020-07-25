@@ -58,8 +58,6 @@ module.exports = {
         function setData(data){
           $ctrl.data = data;
         }
-
-        $ctrl.$onInit();
       },
       template: `
       <div data-form-container>
@@ -142,8 +140,6 @@ module.exports = {
         function setData(data){
           $ctrl.data = data;
         }
-
-        $ctrl.$onInit();
       },
       dependencies: ['$timeout'],
       template: `

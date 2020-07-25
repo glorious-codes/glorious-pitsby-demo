@@ -105,19 +105,21 @@ module.exports = {
         function setCounterSuffix(counterSuffix){
           $ctrl.counterSuffix = counterSuffix
         }
-
-        $ctrl.$onInit();
       },
       template: `
       <div>
-        <div>
-          <pd-button theme="primary" on-click="$ctrl.onClick">
-            Primary Button
-          </pd-button>
-        </div>
-        <div ng-if="$ctrl.counter">
-          Button clicked {{ $ctrl.counter }} {{ $ctrl.counterSuffix }}.
-        </div>
+        <pd-row>
+          <pd-col size="12">
+            <pd-button theme="primary" on-click="$ctrl.onClick">
+              Primary Button
+            </pd-button>
+          </pd-col>
+        </pd-row>
+        <pd-row ng-if="$ctrl.counter">
+          <pd-col size="12">
+            Button clicked {{ $ctrl.counter }} {{ $ctrl.counterSuffix }}.
+          </pd-col>
+        </pd-row>
       </div>`
     }
   ]

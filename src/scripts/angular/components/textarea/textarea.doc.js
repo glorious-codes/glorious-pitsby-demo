@@ -81,8 +81,6 @@ module.exports = {
         function setValue(value){
           $ctrl.value = value;
         }
-
-        $ctrl.$onInit();
       },
       template: `
       <form ng-submit="$ctrl.onSubmit()">
@@ -139,8 +137,6 @@ module.exports = {
         function setLastChange(lastChange){
           $ctrl.lastChange = lastChange;
         }
-
-        $ctrl.$onInit();
       },
       template: `
       <div>
