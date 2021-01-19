@@ -66,7 +66,7 @@ describe('Input', () => {
     const onChange = jest.fn();
     const wrapper = mount({ onChange });
     wrapper.simulate('change', evtMock);
-    const { name, value } = evtMock.target;
-    expect(onChange).toHaveBeenCalledWith({ name, value });
+    // const { name, value } = evtMock.target;
+    expect(onChange).toHaveBeenCalledWith(evtMock);
   });
 });

@@ -39,12 +39,11 @@ module.exports = {
         const { Button, Col, Field, Form, Input, Row, Textarea } = reactComponents;
 
         return function(){
-          const [data, setData] = useState({});
+          const initialData = { name: '', email: '', message: '' };
+          const [data, setData] = useState(initialData);
 
           const onDataChange = ({ name, value }) => {
-            setData(prevState => {
-              return Object.assign(prevState, { [name]: value });
-            });
+            setData({...data, [name]: value});
           };
 
           const onSubmit = () => {
@@ -57,8 +56,7 @@ module.exports = {
 
           const onSubmitSuccess = response => {
             // Here's where you handle server response
-            console.log(response);
-            setData({ name: '', email: '', message: '' });
+            setData(initialData);
           };
 
           return (

@@ -9,11 +9,6 @@ export const Input = ({ type = 'text', name, value, disabled, required, onChange
       value={ value }
       disabled={ disabled }
       required={ required }
-      onChange={ evt => onInputChange(evt, onChange) } />
+      onChange={ onChange } />
   );
 };
-
-function onInputChange({ target }, onChange){
-  const { name, value } = target;
-  onChange({ name, value });
-}

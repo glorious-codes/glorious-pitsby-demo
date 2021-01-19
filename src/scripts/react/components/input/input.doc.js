@@ -146,6 +146,36 @@ module.exports = {
           );
         }
       }
+    },
+    {
+      title: 'Input with Change listener',
+      controller: function(){
+        const { useState } = React;
+        const { Col, Input, Row } = reactComponents;
+
+        return function(){
+          const [data, setData] = useState({username: ''});
+
+          const onChange = ({ target: { name, value } }) => {
+            setData({ ...data, [name]: value });
+          };
+
+          return (
+            <>
+              <Row>
+                <Col size="3">
+                  <Input name="username" value={ data.name } onChange={ onChange } />
+                </Col>
+              </Row>
+              <Row>
+                <Col size="12">
+                  Last Change: { data.username ? JSON.stringify(data) : '' }
+                </Col>
+              </Row>
+            </>
+          );
+        }
+      }
     }
   ]
 };

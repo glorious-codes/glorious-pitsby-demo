@@ -49,7 +49,7 @@ module.exports = {
         }
       },
       template: `
-      <p-row>
+      <pd-row>
         <pd-col size="4">
           <pd-button :onClick="() => onClick('Success Toast', 'success')" block>
             Success Toast
@@ -65,7 +65,7 @@ module.exports = {
             Warning Toast
           </pd-button>
         </pd-col>
-      </p-row>
+      </pd-row>
       `
     }
   ]
