@@ -45,7 +45,7 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('');
 
-          const onChange = ({ value }) => setValue(value);
+          const onChange = ({ target: { value } }) => setValue(value);
 
           return (
             <>
@@ -73,7 +73,7 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('Pitsby');
 
-          const onChange = ({ value }) => setValue(value);
+          const onChange = ({ target: { value } }) => setValue(value);
 
           return (
             <>
@@ -101,7 +101,7 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('');
 
-          const onChange = ({ value }) => setValue(value);
+          const onChange = ({ target: { value } }) => setValue(value);
           const onSubmit = evt => {
             evt.preventDefault();
             setValue('');
@@ -135,7 +135,7 @@ module.exports = {
         return function(){
           const [value, setValue] = useState('');
 
-          const onChange = ({ value }) => setValue(value);
+          const onChange = ({ target: { value } }) => setValue(value);
 
           return (
             <Row>

@@ -42,7 +42,7 @@ module.exports = {
           const initialData = { name: '', email: '', message: '' };
           const [data, setData] = useState(initialData);
 
-          const onDataChange = ({ name, value }) => {
+          const onDataChange = ({ target: { name, value } }) => {
             setData({...data, [name]: value});
           };
 
@@ -111,10 +111,8 @@ module.exports = {
         return function(){
           const [data, setData] = useState({});
 
-          const onDataChange = ({ name, value }) => {
-            setData(prevState => {
-              return Object.assign(prevState, { [name]: value });
-            });
+          const onDataChange = ({ target: { name, value } }) => {
+            setData({...data, [name]: value});
           };
 
           const onSubmit = () => {
