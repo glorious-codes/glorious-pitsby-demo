@@ -25,7 +25,7 @@
     "@babel/preset-react": "^7.7.4",
     "@glorious/pitsby": "^1.33.0",
     "@vue/test-utils": "^1.0.0-beta.32",
-    "angular": "^1.7.9",
+    "angular": "^1.8.3",
     "angular-mocks": "^1.7.9",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^25.3.0",
