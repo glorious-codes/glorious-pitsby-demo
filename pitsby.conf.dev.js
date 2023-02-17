@@ -9,6 +9,7 @@ module.exports = {
     './dist/vueComponents.js'
   ],
   metrics: {
-    googleAnalyticsId: 'UA-157883890-1'
+    plausibleId: 'dev.pitsby.com',
+    plausibleOptions: { trackLocalhost: false }
   }
 };
