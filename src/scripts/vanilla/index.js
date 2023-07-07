@@ -10,7 +10,9 @@ import '@styles/row.styl';
 import '@styles/textarea.styl';
 import '@styles/toaster.styl';
 import toaster from '@vanilla/services/toaster/toaster';
+import { setColorScheme } from '@vanilla/services/color-scheme/color-scheme';
 
 export default {
-  toaster
+  toaster,
+  setColorScheme
 };
