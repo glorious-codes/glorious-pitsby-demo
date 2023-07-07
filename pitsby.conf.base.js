@@ -20,6 +20,10 @@ module.exports = {
       collectDocsFrom: './src/scripts/vanilla'
     }
   ],
+  colorScheme: {
+    initial: 'light',
+    onChange: scheme => vanillaComponents.setColorScheme(scheme)
+  },
   other: [
     './dist/images/'
   ],

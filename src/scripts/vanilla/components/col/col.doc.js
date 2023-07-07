@@ -1,8 +1,8 @@
 const styles = `
 [class*=col] p {
   padding: 0 10px;
-  background-color: #E5EFFF;
-  color: #3282E1;
+  background-color: var(--color-blue-lighter);
+  color: var(--color-blue);
   text-align: center;
   line-height: 40px;
   white-space: nowrap;

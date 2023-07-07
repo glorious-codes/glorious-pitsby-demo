@@ -1,10 +1,10 @@
 @require '_variables'
 @require '_mixins'
 
-theme($background-color, $color)
+theme($background-color, $color, $border-color)
   background-color $background-color
   color $color
-  border-color alpha($color, .5)
+  border-color $border-color
 
 .pd-alert
   position relative
@@ -12,15 +12,15 @@ theme($background-color, $color)
   font-size $font-size-xs
   border-width 1px
   border-style solid
-  theme($color-yellow-lighter, $color-yellow-darker)
+  theme($color-yellow-lighter, $color-yellow-darker, $color-yellow-light)
   border-radius(4px)
   box-sizing(border-box)
   &.pd-alert-danger
-    theme($color-red-lighter, $color-red-dark)
+    theme($color-red-lighter, $color-red-dark, $color-red-light)
     .pd-alert-trigger
       color $color-red-dark
   &.pd-alert-success
-    theme($color-green-lighter, $color-green-dark)
+    theme($color-green-lighter, $color-green-dark, $color-green-light)
   &.pd-alert-has-trigger
     padding-right 100px
 

@@ -1,18 +1,20 @@
 @require '_variables'
 @require '_mixins'
 
-themed-button($text-color, $bg-color, $border-color)
+themed-button($text-color, $bg-color, $border-color, $hover-bg-color, $hover-text-color, $hover-border-color)
   background-color $bg-color
   color $text-color
   border-width 1px
   border-style solid
   border-color $border-color
   &:disabled
-    color alpha($text-color, .8)
-    background-color alpha($bg-color, .9)
+    background-color $bg-color
+    opacity .8
     cursor not-allowed
   +highlight()
-    background-color alpha($bg-color, .9)
+    background-color $hover-bg-color
+    color $hover-text-color
+    border-color $hover-border-color
 
 .pd-button
   padding 0 35px
@@ -25,23 +27,15 @@ themed-button($text-color, $bg-color, $border-color)
   white-space nowrap
   overflow hidden
   text-overflow ellipsis
-  themed-button($color-grey-dark, $color-grey-light, $color-grey-light)
+  themed-button($color-grey-darker, $color-grey-light, $color-grey, $color-grey-lighter, $color-grey-darker, $color-grey-light)
   webkit-appearance(none)
   transition(all, 300ms)
   border-radius(4px)
   box-sizing(border-box)
   unselectable()
   &.pd-button-primary
-    themed-button($color-grey-lighter, $color-blue, $color-blue)
+    themed-button($color-grey-lighter, $color-primary, $color-primary, $color-primary-light, $color-lightest, $color-primary)
   &.pd-button-secondary
-    themed-button($color-blue, transparent, $color-blue)
-    +highlight()
-      color $color-blue-dark
-      background-color transparent
-      border-color $color-blue-dark
-    &:disabled
-      color alpha($color-blue, .8)
-      background-color transparent
-      border-color alpha($color-blue, .5)
+    themed-button($color-primary, transparent, $color-primary, $color-blue-lightest, $color-blue-darker, $color-blue-darker)
   &.pd-button-block
     width 100%

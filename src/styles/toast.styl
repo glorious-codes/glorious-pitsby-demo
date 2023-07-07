@@ -1,14 +1,12 @@
 @require '_variables'
 @require '_mixins'
 
-theme($background-color, $color)
+theme($background-color, $color, $border-color)
   background-color $background-color
   color $color
-  border-color alpha($color, .1)
+  border-color $border-color
   .pd-toast-button-icon
-    color alpha($color, .5)
-    +highlight()
-      color alpha($color, .75)
+    color $color
 
 .pd-toast
   position relative
@@ -18,13 +16,13 @@ theme($background-color, $color)
   border-style solid
   border-radius(4px)
   box-sizing(border-box)
-  theme($color-grey-lighter, $color-grey-dark)
+  theme($color-grey-light, $color-grey-darker, $color-grey)
   &.pd-toast-danger
-    theme($color-red-lighter, $color-red-dark)
+    theme($color-red-lighter, $color-red-dark, $color-red-light)
   &.pd-toast-success
-    theme($color-green-lighter, $color-green-dark)
+    theme($color-green-lighter, $color-green-dark, $color-green-light)
   &.pd-toast-warning
-    theme($color-yellow-lighter, $color-yellow-darker)
+    theme($color-yellow-lighter, $color-yellow-darker, $color-yellow-light)
   & + .pd-toast
     margin-top 20px
 

@@ -4,7 +4,10 @@
 .pd-input
   padding 10px
   width 100%
+  background $color-lightest
+  color $color-darkest
   font-size $font-size-sm
+  font-family sans-serif
   border-width 1px
   border-style solid
   border-color $color-grey
@@ -16,6 +19,6 @@
     border-color $color-grey-light
     +highlight()
       border-color $color-grey-light
-  +highlight()
-    border-color $color-blue
+  &:focus
+    border-color $color-primary
     outline 0
