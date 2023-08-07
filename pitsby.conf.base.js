@@ -1,14 +1,14 @@
 module.exports = {
   projects: [
     {
+      engine: 'react',
+      collectDocsFrom: './src/scripts/react'
+    },
+    {
       engine: 'vue',
       collectDocsFrom: './src/scripts/vue',
       importFrom: './dist/vueComponents',
       libraryName: 'vueComponents'
-    },
-    {
-      engine: 'react',
-      collectDocsFrom: './src/scripts/react'
     },
     {
       engine: 'angular',
