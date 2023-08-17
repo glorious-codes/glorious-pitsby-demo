@@ -23,7 +23,7 @@
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.7.4",
-    "@glorious/pitsby": "^1.36.0",
+    "@glorious/pitsby": "^1.36.1",
     "@vue/test-utils": "^1.0.0-beta.32",
     "angular": "^1.7.9",
     "angular-mocks": "^1.7.9",
