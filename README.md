@@ -1,5 +1,5 @@
 # Glorious Pitsby Demo
-> Demo documentation generated with https://pitsby.com
+> Demo documentation generated with https://pitsby.compilorama.com
 
 [![CircleCI](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master.svg?style=svg)](https://circleci.com/gh/glorious-codes/glorious-pitsby-demo/tree/master)
 [![Coverage Status](https://coveralls.io/repos/github/glorious-codes/glorious-pitsby-demo/badge.svg?branch=master)](https://coveralls.io/github/glorious-codes/glorious-pitsby-demo?branch=master)
